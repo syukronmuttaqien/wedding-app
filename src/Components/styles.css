@@ -61,3 +61,106 @@
 .our-guest-name {
     font-size: 32px;
 }
+.invitation-text {
+    font-family: "Typewriter";
+    font-weight: normal;
+}
+.title-text {
+    font-family: "Windsor";
+}
+.fill-text {
+    font-family: "Lancelot-Regular";
+    font-weight: normal;
+}
+.bride-image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 64px;
+    margin-bottom: 24px;
+}
+.bride-image {
+    width: 500px;
+    height: auto;
+    background-size: contain;
+}
+.time-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 32px;
+    margin-bottom: 64px;
+    height: 550px;
+}
+.time-border {
+    flex: 1;
+    border-width: 1px;
+    border-radius: 10px;
+    height: 100%;
+    border-style: solid;
+    border-color: black;
+}
+.time-divider {
+    width: 32px;
+}
+.time-image {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+}
+.time-border-image {
+    width: 50%;
+}
+.button-time {
+    border-radius: 12px;
+    border-width: 0px;
+    color: black;
+    padding: 16px;
+    font-weight: bold;
+    background-color: #B87333;
+    width: 100%;
+    text-decoration: none;
+}
+.icon {
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    margin-right: 10px;
+}
+.countdown-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    height: auto;
+    border-width: 1px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    background-color: #B8733340;
+    width: 50%;
+}
+
+.countdown-divider {
+    width: 64px;
+}
+.time-section {
+    font-size: large;
+}
+.countdown-outer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    border-width: 1px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    padding-bottom: 32px;
+}

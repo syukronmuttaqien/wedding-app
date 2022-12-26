@@ -7,6 +7,18 @@
   font-family: 'DancingScriptBold';
   src: url(fonts/DancingScript-Bold.ttf);
 }
+@font-face {
+  font-family: 'Typewriter';
+  src: url(fonts/Typewriter-dry.otf);
+}
+@font-face {
+  font-family: 'Lancelot';
+  src: url(fonts/Lancelot-Regular.ttf);
+}
+@font-face {
+  font-family: 'Windsor';
+  src: url(fonts/Windsor.ttf);
+}
 
 body {
   /* background-repeat: repeat-y;

@@ -7,6 +7,8 @@ import OurBox, { DEFAULT_HEIGHT } from './Components/OurBox';
 import RollWood from './Components/RollWood';
 import ThePromises from './Components/ThePromises';
 import Invitation from './Components/Invitation';
+import Time from './Components/Time';
+import Countdown from './Components/Countdown';
 
 function App() {
   const appRef: any = useRef(null)
@@ -91,13 +93,9 @@ function App() {
               <animated.div style={viewHeight !== 0 ? {...scaleAnimation} : {}}>
                 <ThePromises />
                 <Invitation />
-
-                <ThePromises />
-
-                <ThePromises />
-
-                <ThePromises />
-              </ animated.div>
+                <Time />
+                <Countdown />
+              </animated.div>
             </center>
           </animated.div>
         </animated.div>
