@@ -1,0 +1,68 @@
+.rollbar-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: row;
+    height: 80px;
+}
+.rollbar {
+    flex: 1;
+    /* background-repeat: repeat-x; */
+    height: 80px;
+    z-index: 10;
+}
+.handle-left {
+    position: relative;
+    width: 150px;
+    height: 80px;
+    left: 20px;
+    z-index: 1;
+}
+.handle-right {
+    position: relative;
+    width: 150px;
+    height: 80px;
+    right: 20px;
+    z-index: 1;
+}
+.ourbox-outer-container {
+    width: 75%;
+    border: 1px solid black;
+    border-radius: 40px;
+    padding: 4px;
+}
+.ourbox-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 40px;
+    padding: 8px;
+}
+
+.ourbox-image {
+    height: 380px;
+    border-radius: 36px;
+}
+
+.ourbox-name-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+}
+
+.our-name-text {
+    font-size: 48px;
+}
+
+.our-name-for {
+    font-size: 24px;
+} 
+
+.our-guest-name {
+    font-size: 32px;
+}

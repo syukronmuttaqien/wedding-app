@@ -1,24 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import OurBox from './Components/OurBox';
+import RollWood from './Components/RollWood';
+import ThePromises from './Components/ThePromises';
+import Invitation from './Components/Invitation';
 
 function App() {
+  const [isShow, setShow] = useState(false)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='outer'>
+      {!isShow && (
+        <div className='inv-card'>
+          <p>The Wedding of Fani & Syukron</p>
+          <p>Kepada Yth.</p>
+          <p>Syukron</p>
+          <button onClick={() => setShow(true)}>Buka Undangan</button>
+        </div>
+      )}
+      <RollWood />
+      <div className="App">
+      {isShow && (
+        <div className='paper-content'>
+          <center>
+            {/* {!isShow && (
+              <OurBox onClickOpen={() => setShow(true)} name='Syukron' />
+            )} */}
+            
+                <ThePromises />
+                <Invitation />
+              
+          </center>
+        </div>
+      )}
+      </div>
+      <RollWood />
     </div>
   );
 }
