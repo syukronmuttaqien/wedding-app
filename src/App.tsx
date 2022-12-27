@@ -11,6 +11,8 @@ import Time from './Components/Time';
 import Countdown from './Components/Countdown';
 import Galery from './Components/Galery';
 import BackgroundMusic from './Components/BackgroundMusic';
+import Amplop from './Components/Amplop';
+import Message from './Components/Message';
 
 function App() {
   const appRef: any = useRef(null)
@@ -160,7 +162,9 @@ function App() {
                 <Time />
                 <Countdown />
                 <Galery />
-                <button className="button-time" style={{width: 'auto'}} onClick={handleHide}>Tutup Yah!</button>
+                <Message />
+                <Amplop onClickClose={handleHide} />
+                
             </animated.div> 
             </center>
           </animated.div>

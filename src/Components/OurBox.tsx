@@ -1,4 +1,5 @@
 import React from "react";
+import message from '../images/message.png'
 
 // import image1 from '../images/image1.jpg'
 // import imageDummy from '../images/image-dummy.jpg'
@@ -19,7 +20,9 @@ const OurBox = (props: OurBoxProps) => {
       <p className="our-name-for">Kepada Yth</p>
       <b className="our-guest-name">{name}</b>
       <br />
-      <button className="button-time" style={{width: 'auto'}} onClick={onClickOpen}>Buka</button>
+      <button className="button-time" style={{width: 'auto'}} onClick={onClickOpen}>
+        <img className="icon" style={{width:20}} src={message} />Buka Undangan
+      </button>
     </div>
   );
 };

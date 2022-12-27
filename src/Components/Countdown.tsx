@@ -46,7 +46,6 @@ const Countdown = () => {
     };
     return (
         <div>
-            <BorderLine />
             <h1 className='title-text'>Countdown To Our Next Journey</h1>
             <h3 className='fill-text'>
                 Waktu terus berjalan, kami tidak sabar menunggu perjalanan baru kamu akan dimulai,
