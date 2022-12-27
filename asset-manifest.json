@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/wedding-app/static/css/main.50d23d03.css",
+    "main.css": "/wedding-app/static/css/main.0a0b59d6.css",
     "main.js": "/wedding-app/static/js/main.df30521d.js",
     "static/js/787.1c863b1e.chunk.js": "/wedding-app/static/js/787.1c863b1e.chunk.js",
     "static/media/music.mp3": "/wedding-app/static/media/music.566e259bfa239d404676.mp3",
@@ -21,12 +21,12 @@
     "static/media/Lancelot-Regular.ttf": "/wedding-app/static/media/Lancelot-Regular.0aaf8fe595238c141da7.ttf",
     "static/media/cincin.png": "/wedding-app/static/media/cincin.a173d8af1a78cc65e87d.png",
     "index.html": "/wedding-app/index.html",
-    "main.50d23d03.css.map": "/wedding-app/static/css/main.50d23d03.css.map",
+    "main.0a0b59d6.css.map": "/wedding-app/static/css/main.0a0b59d6.css.map",
     "main.df30521d.js.map": "/wedding-app/static/js/main.df30521d.js.map",
     "787.1c863b1e.chunk.js.map": "/wedding-app/static/js/787.1c863b1e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.50d23d03.css",
+    "static/css/main.0a0b59d6.css",
     "static/js/main.df30521d.js"
   ]
 }
