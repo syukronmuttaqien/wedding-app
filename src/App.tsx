@@ -10,6 +10,7 @@ import Invitation from './Components/Invitation';
 import Time from './Components/Time';
 import Countdown from './Components/Countdown';
 import Galery from './Components/Galery';
+import { useMeasure } from '@reactivers/hooks';
 
 function App() {
   const appRef: any = useRef(null)
@@ -17,9 +18,13 @@ function App() {
   const paperContentRef: any = useRef(null)
   const [viewHeight, setViewHeight] = useState(0);
 
+
   const setDefaultHeight = () => {
-    console.log({height: document.getElementsByClassName('paper-content')[0].clientHeight})
-    setViewHeight(document.getElementsByClassName('paper-content')[0].clientHeight)
+    console.log({heightBasic: document.getElementsByClassName('paper-content')[0].clientHeight})
+
+    const height1 = document.getElementsByClassName('paper-content')[0].clientHeight
+
+    setViewHeight(height1)
   }
 
   useEffect(() => {
@@ -41,7 +46,7 @@ function App() {
   }), [viewHeight])
 
   const handleShow = () => {
-    const duration = 1500;
+    const duration = 1000;
     setShow(!isShow)
     api.start({
       config: {
@@ -49,6 +54,13 @@ function App() {
       },
       to: {
         height: `${viewHeight}px`,
+      },
+      onResolve: () => {
+        api.start({
+          to: {
+            height: "auto",
+          }
+        })
       }
     })
 
@@ -66,7 +78,7 @@ function App() {
     })
 
     setTimeout(() => {
-      window.scrollTo({behavior: 'smooth', top: DEFAULT_HEIGHT + 200})
+      window.scrollTo({behavior: 'smooth', top: DEFAULT_HEIGHT})
     }, 100)
   }
 
@@ -83,23 +95,25 @@ function App() {
         </div>
        )}  */}
       <RollWood />
-        <animated.div ref={appRef} className="App">
+        <animated.div ref={appRef} className="all-container">
+          <div className='container-left' />
           <animated.div 
             ref={paperContentRef}
             className="paper-content"
             style={viewHeight !== 0 ? {...heightAnimation} : {}}
             >
             <center>
-              <OurBox width={outerRef?.current?.clientWidth} name='Syukron' onClickOpen={handleShow} />
+              <OurBox name='Syukron' onClickOpen={handleShow} />
               <animated.div style={viewHeight !== 0 ? {...scaleAnimation} : {}}>
                 <ThePromises />
                 <Invitation />
                 <Time />
                 <Countdown />
                 <Galery />
-             </animated.div> 
+            </animated.div> 
             </center>
           </animated.div>
+          <div className='container-right' />
         </animated.div>
       <RollWood />
     </div>

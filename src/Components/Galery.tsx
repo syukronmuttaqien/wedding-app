@@ -4,12 +4,15 @@ import photo2 from '../images/photo2.jpg'
 import photo3 from '../images/photo3.jpg'
 import photo4 from '../images/photo4.jpg'
 import photo5 from '../images/photo5.jpg'
+import photo6 from '../images/photo6.jpg'
+import BorderLine from './BorderLine';
 
 
 const Galery = () => {
     return (
         <div>
             <h1 className='title-text'>Our Memories</h1>
+            <BorderLine />
             <div className='galery-container'>
                 <div>
                     <div className='tape'></div>
@@ -31,7 +34,10 @@ const Galery = () => {
                     <div className='tape'></div>
                     <img className='galery-image frame-image' src={photo5} />
                 </div>
-                
+                <div>
+                    <div className='tape'></div>
+                    <img className='galery-image frame-image' src={photo6} />
+                </div>
             </div>   
 
             
