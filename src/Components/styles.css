@@ -193,7 +193,7 @@
     width: 200px;
     height: auto;
     background-size: contain;
-    margin: 32px;
+    margin: 12px;
 }
 .frame-image {
     margin-top: 30px;
@@ -203,7 +203,6 @@
     padding-right: 10px;
     padding-bottom: 50px;
     border-radius: 5px;
-    
 }
 
 .tape {
