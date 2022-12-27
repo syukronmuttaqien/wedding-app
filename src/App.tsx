@@ -10,7 +10,6 @@ import Invitation from './Components/Invitation';
 import Time from './Components/Time';
 import Countdown from './Components/Countdown';
 import Galery from './Components/Galery';
-import { useMeasure } from '@reactivers/hooks';
 
 function App() {
   const appRef: any = useRef(null)
@@ -37,13 +36,15 @@ function App() {
     from: {
       height: DEFAULT_HEIGHT - 48 + "px", 
     },
-  }), [viewHeight])
+  }), [])
+
   const [scaleAnimation, apiScale] = useSpring(() => ({
     from: {
+      opacity: 1,
       display: "none",
       padding: "48px", 
     },
-  }), [viewHeight])
+  }), [])
 
   const handleShow = () => {
     const duration = 1000;
@@ -69,17 +70,71 @@ function App() {
         duration: 500
       },
       from: {
-        // padding: "0px",
+        opacity: 0,
+        display: "none"
       },
       to: {
+        opacity: 1,
         display: "block",
-        padding: "48px",
       }
     })
 
     setTimeout(() => {
       window.scrollTo({behavior: 'smooth', top: DEFAULT_HEIGHT})
     }, 100)
+  }
+
+  const handleHide = () => {
+    const duration = 1000;
+    setShow(!isShow)
+
+    apiScale.start({
+      config: {
+        duration: 500
+      },
+      reverse: true,
+      from: {
+        opacity: 0,
+      },
+      to: {
+        opacity: 1,
+      },
+      onResolve: () => {
+        apiScale.start({
+          from: {
+            display: "block",
+          },
+          to: {
+            display: "none",
+          },
+        })
+
+        api.start({
+          immediate: true,
+          to: {
+            height: `${viewHeight}px`,
+          },
+          onResolve: () => {
+            api.start({
+              config: {
+                duration,
+              },
+              immediate: false,
+              from: {
+                height: `${viewHeight}px`
+              },
+              to: {
+                height: DEFAULT_HEIGHT - 48 + "px", 
+              },
+            })
+          }
+        })
+      }
+    })
+
+    // setTimeout(() => {
+    //   window.scrollTo({behavior: 'smooth', top: DEFAULT_HEIGHT})
+    // }, 100)
   }
 
   console.log({outerRef})
@@ -110,6 +165,7 @@ function App() {
                 <Time />
                 <Countdown />
                 <Galery />
+                <button className="button-time" style={{width: 'auto'}} onClick={handleHide}>Tutup Yah!</button>
             </animated.div> 
             </center>
           </animated.div>

@@ -19,7 +19,7 @@ const OurBox = (props: OurBoxProps) => {
       <p className="our-name-for">Kepada Yth</p>
       <b className="our-guest-name">{name}</b>
       <br />
-      <button onClick={onClickOpen}>Buka</button>
+      <button className="button-time" style={{width: 'auto'}} onClick={onClickOpen}>Buka</button>
     </div>
   );
 };
