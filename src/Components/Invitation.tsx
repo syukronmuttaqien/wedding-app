@@ -12,14 +12,14 @@ const Invitation = () => {
             <div className='bride-image-container'>              
                 <div>
                     <img className='bride-image' src={fani1} />
-                    <h1 style={{fontSize:48}}>Fani Maharani</h1>
+                    <h1 style={{fontSize:36}}>Fani Maharani</h1>
                     <h2 className='fill-text'>Putri dari : </h2>
                     <h1>Bapak Nurdin & Ibu Maryanah</h1>
                 </div>
                 <div className='bride-image-separator'></div>
                 <div>
                     <img className='bride-image' src={syukron} />
-                    <h1 style={{fontSize:48}}>Syukron Muttaqien</h1>
+                    <h1 style={{fontSize:36}}>Syukron Muttaqien</h1>
                     <h2 className='fill-text'>Putra dari : </h2>
                     <h1>Bapak Suwardi Saidi & Ibu Nurhayati</h1>
 

@@ -86,10 +86,10 @@
     margin-bottom: 24px;
 }
 .bride-image-separator {
-    width: px;
+    width: 64px;
 }
 .bride-image {
-    width: 500px;
+    width: 400px;
     height: auto;
     background-size: contain;
 }
