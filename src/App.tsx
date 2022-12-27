@@ -10,12 +10,15 @@ import Invitation from './Components/Invitation';
 import Time from './Components/Time';
 import Countdown from './Components/Countdown';
 import Galery from './Components/Galery';
+import BackgroundMusic from './Components/BackgroundMusic';
 
 function App() {
   const appRef: any = useRef(null)
   const outerRef: any = useRef(null)
   const paperContentRef: any = useRef(null)
   const [viewHeight, setViewHeight] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [isShow, setShow] = useState(false)
 
 
   const setDefaultHeight = () => {
@@ -30,8 +33,6 @@ function App() {
     setDefaultHeight();
   }, [])
 
-
-  const [isShow, setShow] = useState(false)
   const [heightAnimation, api] = useSpring(() => ({
     from: {
       height: DEFAULT_HEIGHT - 48 + "px", 
@@ -49,6 +50,7 @@ function App() {
   const handleShow = () => {
     const duration = 1000;
     setShow(!isShow)
+    setIsPlaying(true)
     api.start({
       config: {
         duration,
@@ -141,14 +143,7 @@ function App() {
 
   return (
     <div ref={outerRef} className='outer'>
-      {/* {!isShow && (
-        <div className='inv-card'>
-          <p>The Wedding of Fani & Syukron</p>
-          <p>Kepada Yth.</p>
-          <p>Syukron</p>
-          <button onClick={handleShow}>Buka Undangan</button>
-        </div>
-       )}  */}
+      <BackgroundMusic isPlaying={isPlaying} />
       <RollWood />
         <animated.div ref={appRef} className="all-container">
           <div className='container-left' />
