@@ -80,10 +80,13 @@
 .bride-image-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-top: 64px;
     margin-bottom: 24px;
+}
+.bride-image-separator {
+    width: px;
 }
 .bride-image {
     width: 500px;
@@ -96,24 +99,29 @@
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 32px;
-    margin-bottom: 64px;
-    height: 550px;
+    margin-bottom: 32px;
+    height: auto;
 }
 .time-border {
     flex: 1;
     border-width: 1px;
     border-radius: 10px;
     height: 100%;
-    border-style: solid;
-    border-color: black;
+    /* border-style: solid;
+    border-color: black; */
 }
-.time-divider {
-    width: 32px;
+.time-outer {
+    margin-top: 32px;
+    margin-bottom: 64px;
+    height: auto;
+    border: 1px solid;
+    border-radius: 48px;
+
 }
 .time-image {
-    width: 100px;
-    height: auto;
+    height: 80px;
     margin-top: 10px;
+    background-size: contain;
 }
 .time-border-image {
     width: 50%;
@@ -229,4 +237,13 @@
                       linear-gradient(-135deg, transparent 50%, hsla(0,0%,100%,.3) 50%);
     background-position: 100% 100%;
     right: -.2em;
+}
+.quotes {
+    border-radius: 12px;
+    border-width: 0px;
+    color: black;
+    padding: 16px;
+    background-color: rgba(255,255,235,.6);
+    width: 48%;
+    text-decoration: none;
 }

@@ -12,7 +12,9 @@ const Galery = () => {
     return (
         <div>
             <h1 className='title-text'>Our Memories</h1>
-            <BorderLine />
+            <h3 className='fill-text quotes'>
+                &#8220; Berawal dari bercanda dan berakhir dengan rasa yang nyata &#8221;
+            </h3>
             <div className='galery-container'>
                 <div>
                     <div className='tape'></div>
