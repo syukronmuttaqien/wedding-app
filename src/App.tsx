@@ -9,6 +9,7 @@ import ThePromises from './Components/ThePromises';
 import Invitation from './Components/Invitation';
 import Time from './Components/Time';
 import Countdown from './Components/Countdown';
+import Galery from './Components/Galery';
 
 function App() {
   const appRef: any = useRef(null)
@@ -95,7 +96,8 @@ function App() {
                 <Invitation />
                 <Time />
                 <Countdown />
-              </animated.div>
+                <Galery />
+             </animated.div> 
             </center>
           </animated.div>
         </animated.div>

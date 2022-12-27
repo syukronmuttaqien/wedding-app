@@ -163,4 +163,63 @@
     border-style: solid;
     border-color: black;
     padding-bottom: 32px;
+    margin-bottom: 64px;
+}
+.galery-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 64px;
+    margin-bottom: 24px;
+    padding-bottom: 32px;
+}
+.galery-image {
+    width: 200px;
+    height: auto;
+    background-size: contain;
+    margin: 32px;
+}
+.frame-image {
+    margin-top: 30px;
+    background-color: lightyellow;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+    border-radius: 5px;
+    
+}
+
+.tape {
+    background-color: rgba(255,255,235,.6);
+    box-shadow: inset 0 0 1em .5em rgba(255, 255, 255, 0.1);
+    height: 3em;
+    position: absolute;
+    transform: rotate(0deg);
+    width: 8em;
+    margin-top: 10px;
+    margin-left: 80px;
+    -webkit-filter: drop-shadow(0 1px 1px hsla(0,0%,0%,.3));
+ }
+.tape:after,
+.tape:before {
+    background-size: .4em .4em;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    width: .2em;
+ }
+.tape:after {
+    background-image: linear-gradient(45deg, transparent 50%, hsla(0,0%,100%,.3) 50%),
+                      linear-gradient(-45deg, transparent 50%, hsla(0,0%,100%,.3) 50%);
+    background-position: 0 100%;
+    left: -.2em;
+}
+.tape:before {
+    background-image: linear-gradient(135deg, transparent 50%, hsla(0,0%,100%,.3) 50%),
+                      linear-gradient(-135deg, transparent 50%, hsla(0,0%,100%,.3) 50%);
+    background-position: 100% 100%;
+    right: -.2em;
 }
