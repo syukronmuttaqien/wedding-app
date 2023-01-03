@@ -18,7 +18,6 @@ const Amplop = (props:AmplopProps) => {
     
     return (
         <div>
-            <BorderLine />
             <button className="button-time" style={{width: 'auto'}} onClick={handleShow}>Kado Pernikahan</button>
             <button className="button-time" style={{width: 'auto'}} onClick={props.onClickClose}>Tutup Yah!</button>
             <div>

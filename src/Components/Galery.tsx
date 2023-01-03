@@ -5,7 +5,7 @@ import photo2 from '../images/photo2.jpg'
 import photo3 from '../images/photo3.jpg'
 import photo4 from '../images/photo4.jpg'
 import photo5 from '../images/photo5.jpg'
-import photo6 from '../images/photo6.jpg'
+import photo6 from '../images/photo6.jpeg'
 import BorderLine from './BorderLine';
 
 
@@ -27,26 +27,26 @@ const Galery = () => {
                 <Fade direction='up'>
                     <div>
                         <div className='tape'></div>
-                        <img className='galery-image frame-image' src={photo1} />
+                        <img className='galery-image frame-image' src={photo2} />
                     </div>
                 </Fade>
                 <Fade direction='up'>
                 <div>
                     <div className='tape'></div>
-                    <img className='galery-image frame-image' src={photo2} />
+                    <img className='galery-image frame-image' src={photo1} />
                 </div>
                 </Fade>
                 <Fade direction='up'>
                 <div>
                     <div className='tape'></div>
-                    <img className='galery-image frame-image' src={photo3} />
+                    <img className='galery-image frame-image' src={photo4} />
                 </div>
                 </Fade>
 
                 <Fade direction='up'>
                 <div>
                     <div className='tape'></div>
-                    <img className='galery-image frame-image' src={photo4} />
+                    <img className='galery-image frame-image' src={photo3} />
                 </div>
                 </Fade>
 

@@ -1,13 +1,11 @@
 import React from 'react'
 import { Form } from 'react-bootstrap'
 import {Fade} from 'react-awesome-reveal'
-import BorderLine from './BorderLine'
 
 const Message = () => {
     return (
         <>  
             <Fade>
-                <BorderLine />
                 <div className='wrapper-title-container' >
                     <h1 > ----------</h1>
                     <h1 className='title-text title-container'>Message For Us</h1>
