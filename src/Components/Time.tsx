@@ -12,7 +12,6 @@ const Time = () => {
     return(
         <div>
             <Fade direction="up">
-                <BorderLine />
                 <div className='wrapper-title-container' >
                     <h1 > ----------</h1>
                     <h1 className='title-text title-container'>Our Event Will Be Held At :</h1>

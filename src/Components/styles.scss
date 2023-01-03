@@ -34,10 +34,8 @@
 .ourbox-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    border: 1px solid black;
-    border-radius: 40px;
     padding: 8px;
 }
 
@@ -54,6 +52,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 32px;
+    margin-left: 24px;
 }
 
 .our-name-text {
@@ -149,7 +148,7 @@
 }
 .icon {
     width: 16px;
-    height: 16px;
+    height: 20px;
     background-size: contain;
     margin-right: 10px;
 }
@@ -219,7 +218,7 @@
     transform: rotate(0deg);
     width: 8em;
     margin-top: 10px;
-    margin-left: 80px;
+    margin-left: 60px;
     -webkit-filter: drop-shadow(0 1px 1px hsla(0,0%,0%,.3));
  }
 .tape:after,

@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Form } from 'react-bootstrap'
 import {Fade} from 'react-awesome-reveal'
-import BorderLine from './BorderLine'
 
 const Message = () => {
     const [messages, setMessages] = useState<Array<any>>([])
@@ -24,7 +23,6 @@ const Message = () => {
     return (
         <>  
             <Fade>
-                <BorderLine />
                 <div className='wrapper-title-container' >
                     <h1 > ----------</h1>
                     <h1 className='title-text title-container'>Message For Us</h1>
