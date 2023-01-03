@@ -13,7 +13,12 @@ const Galery = () => {
     return (
         <div>
             <Fade cascade direction='up'>
-                <h1 className='title-text'>Our Memories</h1>
+                <div className='wrapper-title-container' >
+                    <h1 > ----------</h1>
+                    <h1 className='title-text title-container'>Our Memories</h1>
+                    <h1 > ----------</h1>
+                </div>
+                <br />
                 <h3 className='fill-text quotes'>
                     <Fade duration={200} cascade>&#8220; Berawal dari bercanda dan berakhir dengan rasa yang nyata &#8221;</Fade>
                 </h3>

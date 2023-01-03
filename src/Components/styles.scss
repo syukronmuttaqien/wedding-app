@@ -96,6 +96,10 @@
     height: auto;
     background-size: contain;
     border-radius: 100%;
+    margin-bottom: 24px;
+}
+.bride-name {
+    font-family: "DancingScriptBold";
 }
 .time-container {
     display: flex;
@@ -160,8 +164,8 @@
     border-radius: 10px;
     background-color: #B8733340;
     width: 50%;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 24px;
+    
 }
 
 .countdown-divider {
@@ -177,10 +181,6 @@
     align-items: center;
     height: auto;
     width: 100%;
-    border-width: 1px;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: black;
     padding-bottom: 32px;
     margin-bottom: 64px;
 }
@@ -249,7 +249,7 @@
     color: black;
     padding: 16px;
     background-color: rgba(255,255,235,.6);
-    width: 48%;
+    width: fit-content;
     text-decoration: none;
 }
 
@@ -273,4 +273,38 @@
 .message-item-list {
     display: flex;
     flex-direction: column;
+}
+.title-container {
+    width: fit-content;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: auto;
+    border-radius: 30px;
+    // border-width: 1px;
+    // border-style: solid;
+    background-color: #B87333;
+}
+.wrapper-title-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+
+}
+.modal-content-container {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: center;
+}
+.modal-content-image {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+}
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

@@ -53,9 +53,16 @@ const Countdown = () => {
     return (
         <div>
             <Fade direction='up'><h1 className='title-text'>Countdown To Our Next Journey</h1>
+                 <div className='wrapper-title-container' >
+                    <h1 > ----------</h1>
+                    <h1 className='title-text title-container'>Countdown To Our Next Journey</h1>
+                    <h1 > ----------</h1>
+                </div>
+                <br/>
                 <h3 className='fill-text'>
                     Waktu terus berjalan, kami tidak sabar menunggu perjalanan baru kamu akan dimulai,
                     untuk itu mari hitung mundur bersama untuk menyambut perjalanan baru kami di mulai. 
+                    
                 </h3>
                 <div className='countdown-outer-container'>
                     <div className='countdown-container'>
@@ -83,7 +90,6 @@ const Countdown = () => {
                         <img className="icon" src = {kalender} />
                         Tambahkan Pengingat
                     </a>
-
                     {/* <a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NTBvMHEwdTJ0dHJnMzRlbWxiczIyb2N1ZGsgc3l1a3Jvbm11dHRhcWllbjc0QG0&amp;tmsrc=syukronmuttaqien74%40gmail.com">
                         <img src="https://www.google.com/calendar/images/ext/gc_button1_en-GB.gif" />
                     </a> */}

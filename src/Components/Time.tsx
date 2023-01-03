@@ -13,7 +13,11 @@ const Time = () => {
         <div>
             <Fade direction="up">
                 <BorderLine />
-                <h1 className="title-text">Our Event Will Be Held At : </h1>
+                <div className='wrapper-title-container' >
+                    <h1 > ----------</h1>
+                    <h1 className='title-text title-container'>Our Event Will Be Held At :</h1>
+                    <h1 > ----------</h1>
+                </div>
                 <div className="time-outer">
                     <div className="time-container">
                         <div className="time-border">

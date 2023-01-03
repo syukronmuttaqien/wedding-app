@@ -8,7 +8,11 @@ const Message = () => {
         <>  
             <Fade>
                 <BorderLine />
-                <h1 className='title-text'>Message For Us</h1>
+                <div className='wrapper-title-container' >
+                    <h1 > ----------</h1>
+                    <h1 className='title-text title-container'>Message For Us</h1>
+                    <h1 > ----------</h1>
+                </div>
                 <div className='mt-4'>
                     <h3 className='fill-text'>
                     Berikan ucapan dan do'a terbaik anda untuk kami

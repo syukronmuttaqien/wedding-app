@@ -7,7 +7,11 @@ const ThePromises = () => {
     return (
         <div>
             <Fade triggerOnce cascade direction='up'>
-                <h1 className='title-text'>The Promises</h1>
+                 <div className='wrapper-title-container' >
+                    <h1 > ----------</h1>
+                    <h1 className='title-text title-container'>The Promises</h1>
+                    <h1 > ----------</h1>
+                </div>
                 <p className='fill-text'>“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia 
                     menciptakan untukmu pasangan-pasangan dari jenismu sendiri, 
                     supaya kamu cenderung dan merasa tenteram kepadanya,

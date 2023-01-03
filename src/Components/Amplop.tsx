@@ -1,7 +1,9 @@
 import React, { useState}from 'react'
 import BorderLine from './BorderLine'
 import Modal from 'react-bootstrap/Modal';
-import { Container } from 'react-bootstrap';
+import { Container, Table } from 'react-bootstrap';
+import dana1 from '../images/danafani.png'
+import dana2 from '../images/danas.png'
 
 
 
@@ -28,8 +30,17 @@ const Amplop = (props:AmplopProps) => {
                     </Modal.Header>
                     <Modal.Body>
                         Doa restu anda merupakan karunia yang sangat berarti bagi kami, Jika memberi 
-                        adalah ungkapan tanda selamat, anda dapat memberi kado secara online pada :
-                        
+                        adalah ungkapan tanda selamat, anda dapat memberi kado ke alamat : <b>Kp. Curug deng-deng No 12 RT 003 RW 004 Kec. Caringin Kab Bogor</b> atau secara online pada :
+                        <div className='modal-content-container'>
+                            <div className='modal-content'>
+                                <img className='modal-content-image' src={dana1}></img>
+                                Dana a/n Fani Maharani
+                            </div>
+                            <div className='modal-content'>
+                                <img className='modal-content-image' src={dana2}></img>
+                                Dana a/n Syukron Muttaqien
+                            </div>
+                        </div>
                     </Modal.Body>
                     <Modal.Footer>
                     <button className="button-time" style={{width: 'auto'}} onClick={handleClose}>
