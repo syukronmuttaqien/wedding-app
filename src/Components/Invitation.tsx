@@ -1,6 +1,6 @@
 import React from 'react'
-import fani1 from '../images/Fani.png'
-import syukron from '../images/syukron.png'
+import fani from '../images/bride1.png'
+import syukron from '../images/bride2.png'
 
 const Invitation = () => {
     return (
@@ -11,7 +11,7 @@ const Invitation = () => {
             </h3>
             <div className='bride-image-container'>              
                 <div>
-                    <img className='bride-image' src={fani1} />
+                    <img className='bride-image' src={fani} />
                     <h1 style={{fontSize:36}}>Fani Maharani</h1>
                     <h2 className='fill-text'>Putri dari : </h2>
                     <h1>Bapak Nurdin & Ibu Maryanah</h1>

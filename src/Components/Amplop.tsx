@@ -5,6 +5,7 @@ import { Container } from 'react-bootstrap';
 
 
 
+
 type AmplopProps = {
     onClickClose: () => void;
 };
