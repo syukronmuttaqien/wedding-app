@@ -267,12 +267,28 @@
     height: 320px;
     border-radius: 10px;
     background-color: #B8733340;
+    overflow-y: scroll;
+    padding: 4px;
     width: 50%;
 }
 
 .message-item-list {
     display: flex;
     flex-direction: column;
+    // background-color: red;
+    padding: 8px;
+    margin-bottom: 2px;
+
+    >.item-name {
+        font-size: 13px;
+        text-align: start;
+        font-weight: 600;
+    }
+
+    >.item-message {
+        text-align: start;
+        font-size: 12px;
+    }
 }
 .title-container {
     width: fit-content;
@@ -307,4 +323,42 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.music-trigger {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: auto;
+    z-index: 100;
+}
+
+.music-trigger-inside {
+    position: fixed;
+    margin-left: 42px;
+    margin-top: 16px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    z-index: 101;
+}
+
+.music-trigger-inside-play {
+    position: fixed;
+    margin-left: 42px;
+    margin-top: 16px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    z-index: 101;
+    -webkit-animation:spin 5s linear infinite;
+    -moz-animation:spin 5s linear infinite;
+    animation:spin 5s linear infinite;
+}
+
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
 }
