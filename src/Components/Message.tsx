@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Form } from 'react-bootstrap'
 import {Fade} from 'react-awesome-reveal'
-import BorderLine from './BorderLine'
 
 import { Database, onValue, push, ref, set } from 'firebase/database'
 
@@ -42,7 +41,6 @@ const Message = (props: MessageProps) => {
     return (
         <>  
             <Fade>
-                <BorderLine />
                 <div className='wrapper-title-container' >
                     <h1 > ----------</h1>
                     <h1 className='title-text title-container'>Message For Us</h1>
