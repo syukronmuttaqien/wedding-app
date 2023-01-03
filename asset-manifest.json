@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.79ebbabe.css",
-    "main.js": "/static/js/main.0236ef29.js",
+    "main.css": "/static/css/main.5e01d265.css",
+    "main.js": "/static/js/main.6c9af66e.js",
     "static/js/787.1c863b1e.chunk.js": "/static/js/787.1c863b1e.chunk.js",
+    "static/media/bride1.png": "/static/media/bride1.a2c1e34ec2736e0a2d81.png",
+    "static/media/bride2.png": "/static/media/bride2.e4c1afd6d812d750903a.png",
     "static/media/music.mp3": "/static/media/music.566e259bfa239d404676.mp3",
-    "static/media/Fani.png": "/static/media/Fani.fbea9f86abb2ffb641dd.png",
-    "static/media/syukron.png": "/static/media/syukron.d81a360a9b5fae0ecc00.png",
     "static/media/photo4.jpg": "/static/media/photo4.623160fd9a4882c4d48c.jpg",
     "static/media/photo1.jpg": "/static/media/photo1.96a925696423beaeb761.jpg",
     "static/media/photo5.jpg": "/static/media/photo5.7e6c72a321b031eba9f9.jpg",
@@ -13,20 +13,23 @@
     "static/media/photo2.jpg": "/static/media/photo2.1f609bcfc0973b1441cc.jpg",
     "static/media/photo3.jpg": "/static/media/photo3.1e7fbcb5934be11176db.jpg",
     "static/media/gate.png": "/static/media/gate.d0c1faebaf683d2263bd.png",
+    "static/media/danafani.png": "/static/media/danafani.4282508fc3bf9c751bb5.png",
     "static/media/paper.png": "/static/media/paper.a0f46e6326d702812208.png",
     "static/media/DancingScript-Bold.ttf": "/static/media/DancingScript-Bold.72fc35f38c2864ca2cd5.ttf",
     "static/media/DancingScript-Regular.ttf": "/static/media/DancingScript-Regular.5bfc0dcc0c0ff5a2832e.ttf",
     "static/media/Windsor.ttf": "/static/media/Windsor.4a27f979aae14c54e5fa.ttf",
     "static/media/Typewriter-dry.otf": "/static/media/Typewriter-dry.4b3d15e775230210c4e3.otf",
     "static/media/Lancelot-Regular.ttf": "/static/media/Lancelot-Regular.0aaf8fe595238c141da7.ttf",
+    "static/media/danas.png": "/static/media/danas.c58c557f7fef2eaab9ff.png",
+    "static/media/vinylblack.png": "/static/media/vinylblack.53216f05fa8a54fe6c11.png",
     "static/media/cincin.png": "/static/media/cincin.a173d8af1a78cc65e87d.png",
     "index.html": "/index.html",
-    "main.79ebbabe.css.map": "/static/css/main.79ebbabe.css.map",
-    "main.0236ef29.js.map": "/static/js/main.0236ef29.js.map",
+    "main.5e01d265.css.map": "/static/css/main.5e01d265.css.map",
+    "main.6c9af66e.js.map": "/static/js/main.6c9af66e.js.map",
     "787.1c863b1e.chunk.js.map": "/static/js/787.1c863b1e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.79ebbabe.css",
-    "static/js/main.0236ef29.js"
+    "static/css/main.5e01d265.css",
+    "static/js/main.6c9af66e.js"
   ]
 }
