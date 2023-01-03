@@ -252,3 +252,25 @@
     width: 48%;
     text-decoration: none;
 }
+
+.message-container {
+    width: 50%;
+    padding: 32px;
+    font-family: 'Windsor';
+}
+
+.message-list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 320px;
+    border-radius: 10px;
+    background-color: #B8733340;
+    width: 50%;
+}
+
+.message-item-list {
+    display: flex;
+    flex-direction: column;
+}

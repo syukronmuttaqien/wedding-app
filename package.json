@@ -2,8 +2,9 @@
   "name": "wedding-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://syukronmuttaqien.github.io/wedding-app/",
+  "homepage": "https://faniandsyukron.wedding",
   "dependencies": {
+    "@emotion/react": "^11.10.5",
     "@react-spring/web": "^9.6.1",
     "@reactivers/hooks": "^1.0.14",
     "@testing-library/jest-dom": "^5.16.5",
@@ -16,6 +17,7 @@
     "bootstrap": "^5.2.3",
     "gh-pages": "^4.0.0",
     "react": "^18.2.0",
+    "react-awesome-reveal": "^4.1.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
     "react-reveal": "^1.2.2",

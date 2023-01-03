@@ -1,7 +1,13 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/alt-text */
 import React, {useState, useEffect} from 'react'
 import BorderLine from './BorderLine'
 import kalender from '../images/kalender.png'
 
+import {Fade} from 'react-awesome-reveal';
+
+
+const calendarSection1 = 'https://www.google.com/calendar/render?action=TEMPLATE&text=Fani+and+Syukron+Wedding&location=Villa+Park+Glen&dates=20230121T040000Z%2F20230121T100000Z'
 
 const Countdown = () => {
     const [countdownDate, setCountdownDate] = useState(new Date('01/21/2023').getTime());
@@ -46,41 +52,44 @@ const Countdown = () => {
     };
     return (
         <div>
-            <h1 className='title-text'>Countdown To Our Next Journey</h1>
-            <h3 className='fill-text'>
-                Waktu terus berjalan, kami tidak sabar menunggu perjalanan baru kamu akan dimulai,
-                untuk itu mari hitung mundur bersama untuk menyambut perjalanan baru kami di mulai. 
-                
-            </h3>
-            <div className='countdown-outer-container'>
-                <div className='countdown-container'>
-                    <div className='time-section'>
-                        <h1 className='time'>{state.days || '0'}</h1>
-                        <h3 className="title-text">Days</h3>
+            <Fade direction='up'><h1 className='title-text'>Countdown To Our Next Journey</h1>
+                <h3 className='fill-text'>
+                    Waktu terus berjalan, kami tidak sabar menunggu perjalanan baru kamu akan dimulai,
+                    untuk itu mari hitung mundur bersama untuk menyambut perjalanan baru kami di mulai. 
+                </h3>
+                <div className='countdown-outer-container'>
+                    <div className='countdown-container'>
+                        <div className='time-section'>
+                            <h1 className='time'>{state.days || '0'}</h1>
+                            <h3 className="title-text">Days</h3>
+                        </div>
+                        <div className='countdown-divider' />
+                        <div className='time-section'>
+                            <h1 className='time'>{state.hours || '00'}</h1>
+                            <h3 className="title-text">Hours</h3>
+                        </div>
+                        <div className='countdown-divider' />
+                        <div className='time-section'>
+                            <h1 className='time'>{state.minutes || '00'}</h1>
+                            <h3 className="title-text">Minutes</h3>
+                        </div>
+                        <div className='countdown-divider' />
+                        <div className='time-section'>
+                            <h1 className='time'>{state.seconds || '00'}</h1>
+                            <h3 className="title-text">Seconds</h3>
+                        </div>
                     </div>
-                    <div className='countdown-divider' />
-                    <div className='time-section'>
-                        <h1 className='time'>{state.hours || '00'}</h1>
-                        <h3 className="title-text">Hours</h3>
-                    </div>
-                    <div className='countdown-divider' />
-                    <div className='time-section'>
-                        <h1 className='time'>{state.minutes || '00'}</h1>
-                        <h3 className="title-text">Minutes</h3>
-                    </div>
-                    <div className='countdown-divider' />
-                    <div className='time-section'>
-                        <h1 className='time'>{state.seconds || '00'}</h1>
-                        <h3 className="title-text">Seconds</h3>
-                    </div>
-                </div>
-                <a href="" style={{width:"48%"}} target="_blank" className="button-time fill-text">
-                    <img className="icon" src = {kalender} />
-                    Tambahkan Pengingat
-                </a>
+                    <a href={calendarSection1} style={{width:"48%"}} target="_blank" className="button-time fill-text" rel="noreferrer">
+                        <img className="icon" src = {kalender} />
+                        Tambahkan Pengingat
+                    </a>
 
-            </div>
-          
+                    {/* <a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NTBvMHEwdTJ0dHJnMzRlbWxiczIyb2N1ZGsgc3l1a3Jvbm11dHRhcWllbjc0QG0&amp;tmsrc=syukronmuttaqien74%40gmail.com">
+                        <img src="https://www.google.com/calendar/images/ext/gc_button1_en-GB.gif" />
+                    </a> */}
+
+                </div>
+            </Fade>
         </div>
            
     )
