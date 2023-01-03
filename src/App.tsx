@@ -10,7 +10,7 @@ import Invitation from './Components/Invitation';
 import Time from './Components/Time';
 import Countdown from './Components/Countdown';
 import Galery from './Components/Galery';
-import BackgroundMusic from './Components/BackgroundMusic';
+import BackgroundMusic, { MusicTrigger } from './Components/BackgroundMusic';
 import Amplop from './Components/Amplop';
 import Message from './Components/Message';
 
@@ -91,6 +91,7 @@ function App() {
   const handleHide = () => {
     const duration = 1000;
     setShow(!isShow)
+    setIsPlaying(false)
 
     apiScale.start({
       config: {
@@ -144,8 +145,12 @@ function App() {
   console.log({outerRef})
 
   return (
+    <>
     <div ref={outerRef} className='outer'>
-      <BackgroundMusic isPlaying={isPlaying} />
+      {isShow && (
+        <MusicTrigger isPlaying={isPlaying} onChangeStatus={() => setIsPlaying(!isPlaying)} />
+      )}
+      <BackgroundMusic onFinishedPlaying={() => setIsPlaying(false)} isPlaying={isPlaying} />
       <RollWood />
         <animated.div ref={appRef} className="all-container">
           <div className='container-left' />
@@ -164,7 +169,6 @@ function App() {
                 <Galery />
                 <Message />
                 <Amplop onClickClose={handleHide} />
-                
             </animated.div> 
             </center>
           </animated.div>
@@ -172,6 +176,7 @@ function App() {
         </animated.div>
       <RollWood />
     </div>
+    </>
   );
 }
 
