@@ -23,7 +23,11 @@ const OurBox = (props: OurBoxProps) => {
     <div className="ourbox-container">
       <div>
         <div className='tape'></div>
-        <img className='galery-image frame-image' src={photobride} />
+        <div className="ourbox-image-frame">
+          <img className='ourbox-image' src={photobride} />
+          <p className="outbox-text-bottom bride-name">Fani & Syukron</p>
+        </div>
+
       </div>
       <div className='ourbox-name-box'>
       <p style={{fontSize:20 }} className="title-text">Kepada : 
