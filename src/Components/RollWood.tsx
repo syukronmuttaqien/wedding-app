@@ -2,7 +2,7 @@ import React from 'react'
 import roll from '../images/roll.png'
 import handleLeft from '../images/handle.png'
 import handleRight from '../images/handle-right.png'
-import './styles.css'
+import './styles.scss'
 
 const RollWood = () => {
     return (

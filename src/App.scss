@@ -1,28 +1,7 @@
-@font-face {
-  font-family: 'DancingScript';
-  src: url(fonts/DancingScript-Regular.ttf);
-}
-
-@font-face {
-  font-family: 'DancingScriptBold';
-  src: url(fonts/DancingScript-Bold.ttf);
-}
-@font-face {
-  font-family: 'Typewriter';
-  src: url(fonts/Typewriter-dry.otf);
-}
-@font-face {
-  font-family: 'Lancelot';
-  src: url(fonts/Lancelot-Regular.ttf);
-}
-@font-face {
-  font-family: 'Windsor';
-  src: url(fonts/Windsor.ttf);
-}
+@import "./scss/wedding.scss";
 
 body {
   font-size: small;
-  font-family: 'DancingScript';
   background-color: black !important;
 }
 

@@ -3,7 +3,7 @@ import message from '../images/message.png'
 
 // import image1 from '../images/image1.jpg'
 // import imageDummy from '../images/image-dummy.jpg'
-import "./styles.css";
+import "./styles.scss";
 
 export const DEFAULT_HEIGHT = 300;
 

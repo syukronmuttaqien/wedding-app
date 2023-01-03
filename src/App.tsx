@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import logo from './logo.svg';
 import { animated, useSpring } from '@react-spring/web'
-import './App.css';
+import './App.scss';
 import OurBox, { DEFAULT_HEIGHT } from './Components/OurBox';
 import RollWood from './Components/RollWood';
 import ThePromises from './Components/ThePromises';
