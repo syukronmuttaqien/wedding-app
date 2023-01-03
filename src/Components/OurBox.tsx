@@ -16,7 +16,7 @@ const OurBox = (props: OurBoxProps) => {
   const { name, onClickOpen } = props;
 
   return (
-    <div className='ourbox-name-box'>
+    <div className='ourbox-name-box'>6666666666
       <p className="our-name-for">Kepada Yth</p>
       <b className="our-guest-name">{name}</b>
       <br />
