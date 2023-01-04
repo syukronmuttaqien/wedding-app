@@ -1,24 +1,42 @@
-import React, { useState } from 'react'
-import { Button, Form } from 'react-bootstrap'
+import React, { useEffect, useState } from 'react'
+import { Form } from 'react-bootstrap'
 import {Fade} from 'react-awesome-reveal'
 import BorderLine from './BorderLine'
 
-const Message = () => {
+import { Database, onValue, push, ref, set } from 'firebase/database'
+
+type MessageProps = {
+    database: Database
+}
+
+const Message = (props: MessageProps) => {
+    const {database} = props
+    const referenceDb = ref(database, 'messages')
     const [messages, setMessages] = useState<Array<any>>([])
     const [nama, setNama] = useState('')
     const [message, setMessage] = useState('')
 
-    const sendMessage = () => {
-        const newMessages: Array<any> = messages.slice()
+    useEffect(() => {
+        return onValue(referenceDb, (snapshot) => {
+            const data = snapshot.val();
 
-        newMessages.unshift({
-            nama,
-            message
+            console.log({data})
+
+            if (snapshot.exists()) {
+                setMessages(Object.values(data))
+            }
+        });
+    }, []);
+
+    const sendMessage = async () => {
+        const newMessage = await push(referenceDb)
+        await set(newMessage, {
+            name: nama,
+            message: message
         })
 
-        setMessages(newMessages)
-        setMessage('')
         setNama('')
+        setMessage('')
     }
 
     return (
@@ -49,9 +67,9 @@ const Message = () => {
                 <button onClick={sendMessage} style={{width: 'fit-content'}} className='button-time'>Send</button>
                 <div className='mb-4'>
                     <div className='mt-4 message-list-container'>
-                        {messages.map((r) => (
-                            <div className='message-item-list'>
-                                <span className='item-name'>{r.nama}</span>
+                        {messages?.map((r: any, index: number) => (
+                            <div key={index.toString()} className='message-item-list'>
+                                <span className='item-name'>{r.name}</span>
                                 <span className='item-message'>{r.message}</span>
                             </div>
                         ))}
