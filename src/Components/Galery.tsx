@@ -20,7 +20,7 @@ const Galery = () => {
                 </div>
                 <br />
                 <h3 className='fill-text quotes'>
-                    <Fade duration={200} cascade>&#8220; Berawal dari bercanda dan berakhir dengan rasa yang nyata &#8221;</Fade>
+                    <Fade duration={75} cascade>&#8220; Berawal dari bercanda dan berakhir dengan rasa yang nyata &#8221;</Fade>
                 </h3>
             </Fade>
             <div className='galery-container'>
