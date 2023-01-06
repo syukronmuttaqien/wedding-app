@@ -14,6 +14,23 @@ import BackgroundMusic, { MusicTrigger } from './Components/BackgroundMusic';
 import Amplop from './Components/Amplop';
 import Message from './Components/Message';
 
+import { initializeApp } from "firebase/app";
+import { getDatabase, onValue, ref } from "firebase/database";
+
+// TODO: Replace the following with your app's Firebase project configuration
+// See: https://firebase.google.com/docs/web/learn-more#config-object
+const firebaseConfig = {
+  // ...
+  // The value of `databaseURL` depends on the location of the database
+  databaseURL: "https://wedding-app-ff2db-default-rtdb.asia-southeast1.firebasedatabase.app",
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+// Initialize Realtime Database and get a reference to the service
+const db = getDatabase(app);
+
 function App() {
   const appRef: any = useRef(null)
   const outerRef: any = useRef(null)
@@ -21,7 +38,6 @@ function App() {
   const [viewHeight, setViewHeight] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isShow, setShow] = useState(false)
-
 
   const setDefaultHeight = () => {
     console.log({heightBasic: document.getElementsByClassName('paper-content')[0].clientHeight})
@@ -167,7 +183,7 @@ function App() {
                 <Time />
                 <Countdown />
                 <Galery />
-                <Message />
+                <Message database={db} />
                 <Amplop onClickClose={handleHide} />
             </animated.div> 
             </center>
