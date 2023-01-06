@@ -25,6 +25,40 @@
     right: 20px;
     z-index: 1;
 }
+
+@media (max-width: 640px) {
+    .rollbar-container {
+        display: flex;
+        position: relative;
+        width: 100%;
+        flex-direction: row;
+        height: 40px;
+    }
+    .rollbar {
+        flex: 1;
+        /* background-repeat: repeat-x; */
+        height: 40px;
+        z-index: 10;
+        background-size: contain;
+    }
+    .handle-left {
+        position: relative;
+        width: auto;
+        height: 40px;
+        left: 10px;
+        z-index: 1;
+        background-size: contain;
+    }
+    .handle-right {
+        position: relative;
+        width: auto;
+        height: 40px;
+        right: 10px;
+        z-index: 1;
+        background-size: contain;
+    }
+}
+
 .ourbox-outer-container {
     width: 75%;
     border: 1px solid black;

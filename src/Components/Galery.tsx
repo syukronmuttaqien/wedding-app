@@ -24,40 +24,28 @@ const Galery = () => {
                 </h3>
             </Fade>
             <div className='galery-container'>
-                <Fade direction='up'>
+                <Fade cascade>
                     <div>
                         <div className='tape'></div>
                         <img className='galery-image frame-image' src={photo2} />
                     </div>
-                </Fade>
-                <Fade direction='up'>
                 <div>
                     <div className='tape'></div>
                     <img className='galery-image frame-image' src={photo1} />
                 </div>
-                </Fade>
-                <Fade direction='up'>
                 <div>
                     <div className='tape'></div>
                     <img className='galery-image frame-image' src={photo4} />
                 </div>
-                </Fade>
-
-                <Fade direction='up'>
                 <div>
                     <div className='tape'></div>
                     <img className='galery-image frame-image' src={photo3} />
                 </div>
-                </Fade>
-
-                <Fade direction='up'>
                 <div>
                     <div className='tape'></div>
                     <img className='galery-image frame-image' src={photo5} />
                 </div>
-                </Fade>
 
-                <Fade direction='up'>
                 <div>
                     <div className='tape'></div>
                     <img className='galery-image frame-image' src={photo6} />
