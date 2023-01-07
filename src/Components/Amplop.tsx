@@ -18,7 +18,7 @@ const Amplop = (props:AmplopProps) => {
     
     return (
         <div>
-            <button className="button-time mt-4 width-flexible" onClick={handleShow}>Kado Pernikahan</button>
+            <button className="button-time mt-4 mb-4 width-flexible" onClick={handleShow}>Kado Pernikahan</button>
             <div>
                 <Modal centered show={show} onHide={handleClose} size="lg">
                     <Modal.Header closeButton>
@@ -47,6 +47,7 @@ const Amplop = (props:AmplopProps) => {
                     </Modal.Footer>
                 </Modal>
             </div>
+            <h1 className='title-text mt-4'>We expect you to come to our wedding, Thank You!</h1>
             <button className="button-time mt-4 mb-4 width-flexible" onClick={props.onClickClose}>Tutup Undangan</button>
         </div>
     )

@@ -32,13 +32,12 @@ const OurBox = (props: OurBoxProps) => {
               <img className='ourbox-image' src={photobride} />
               <p className="outbox-text-bottom bride-name">Fani & Syukron</p>
             </div>
-
           </div>
           <div className='ourbox-name-box mt-4'>
-            <span className="title-text f20">Kepada : 
-              <b className="fill-text f20"> {name}</b>
+            <span className="title-text f16">Kepada : 
+              <b className="fill-text f16"> {name}</b>
             </span>
-            <button className="button-time mt-2" style={{width: 'auto'}} onClick={onClickOpen}>
+            <button className="button-time mt-3" style={{width: 'auto'}} onClick={onClickOpen}>
               <img className="icon" style={{width:20}} src={amplop} />Buka Undangan
             </button>
           </div>

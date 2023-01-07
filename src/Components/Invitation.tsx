@@ -20,7 +20,7 @@ const Invitation = () => {
                         <img className='bride-image' src={fani} />
                         <h1 className='bride-name'>Fani Maharani</h1>
                         <h2 className='fill-text'>Putri dari : </h2>
-                        <h1 className='bride-name'>Bapak Nurdin & Ibu Maryanah</h1>
+                        <h2 className='bride-name'>Bapak Nurdin & Ibu Maryanah</h2>
                     </div>
                 </Fade>
                 <div className='bride-image-separator'></div>
@@ -29,7 +29,7 @@ const Invitation = () => {
                         <img className='bride-image' src={syukron} />
                         <h1 className='bride-name'>Syukron Muttaqien</h1>
                         <h2 className='fill-text' >Putra dari : </h2>
-                        <h1 className='bride-name'>Bapak Suwardi Saidi & Ibu Nurhayati</h1>
+                        <h2 className='bride-name'>Bapak Suwardi Saidi & Ibu Nurhayati</h2>
                     </div>
                 </Fade>
             </div>

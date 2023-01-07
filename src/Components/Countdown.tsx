@@ -59,11 +59,11 @@ const Countdown = () => {
                     {/* <h1 > ----------</h1> */}
                 </div>
                 <br/>
-                <h3 className='fill-text'>
-                    Waktu terus berjalan, kami tidak sabar menunggu perjalanan baru kamu akan dimulai,
+                <h6 className='fill-text'>
+                    Waktu terus berjalan, kami tidak sabar menunggu perjalanan baru kami akan dimulai,
                     untuk itu mari hitung mundur bersama untuk menyambut perjalanan baru kami di mulai. 
                     
-                </h3>
+                </h6>
                 <div className='countdown-outer-container'>
                     <div className='countdown-container'>
                         <div className='time-section'>

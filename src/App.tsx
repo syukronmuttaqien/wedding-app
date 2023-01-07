@@ -71,7 +71,16 @@ function App() {
   }, [])
 
   useEffect(() => {
-    if (innerWidth < 401) {
+
+    if (innerWidth <= 280) {
+      SET_DEFAULT_HEIGHT(410)
+    }
+
+    if (innerWidth > 280 && innerWidth <= 320) {
+      SET_DEFAULT_HEIGHT(385)
+    }
+    
+    if (innerWidth > 320 && innerWidth < 401) {
       SET_DEFAULT_HEIGHT(445)
     }
 

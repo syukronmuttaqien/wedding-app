@@ -85,22 +85,22 @@
 
 .our-name-for {
     font-size: 24px;
-    font-family: 'DancingScript';
+    font-family: 'DancingScript' !important;
 } 
 
 .our-guest-name {
     font-size: 32px;
-    font-family: 'DancingScript';
+    font-family: 'DancingScript' !important;
 }
 .invitation-text {
-    font-family: "Typewriter";
+    font-family: "Typewriter" !important;
     font-weight: normal;
 }
 .title-text {
-    font-family: "Windsor";
+    font-family: "Windsor" !important;
 }
 .fill-text {
-    font-family: "Lancelot-Regular";
+    font-family: "Lancelot-Regular" !important;
     font-weight: normal;
 }
 .bride-image-container {
@@ -121,7 +121,7 @@
     margin-bottom: 24px;
 }
 .bride-name {
-    font-family: "DancingScriptBold";
+    font-family: "DancingScriptBold" !important;
 }
 .time-container {
     display: flex;
@@ -287,14 +287,13 @@
 .message-container {
     width: 50%;
     padding: 32px;
-    font-family: 'Windsor';
+    font-family: 'Windsor' !important;
 }
 
 .message-list-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
     height: 320px;
     border-radius: 10px;
     background-color: #B8733340;
@@ -365,23 +364,26 @@
 }
 
 .music-trigger-inside {
-    position: fixed;
-    margin-left: 42px;
-    margin-top: 16px;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    // margin-left: -30px !important;
+    margin-top: 48px;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     z-index: 101;
 }
 
 .music-trigger-inside-play {
-    position: fixed;
-    margin-left: 42px;
-    margin-top: 16px;
+    position: absolute;
+    // margin-left: -30px !important;
+    left: -50px;
+    margin-top: 48px;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
-    z-index: 101;
+    width: 100px;
+    height: 100px;
+    z-index: 102;
     -webkit-animation:spin 5s linear infinite;
     -moz-animation:spin 5s linear infinite;
     animation:spin 5s linear infinite;

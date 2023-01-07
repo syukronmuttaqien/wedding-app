@@ -1,27 +1,27 @@
-@media (min-width: 361px) and (max-width: 425px) {
+@media (min-width: 0px) and (max-width: 360px) {
     .rollbar-container {
         display: flex;
         position: relative;
         width: 100%;
         flex-direction: row;
-        height: 20px;
+        height: 10px;
     }
     .rollbar {
         flex: 1;
         /* background-repeat: repeat-x; */
-        height: 20px;
+        height: 10px;
         z-index: 10;
     }
     .handle-left {
         position: relative;
-        height: 20px;
-        left: 5px;
+        height: 10px;
+        left: 2.5px;
         z-index: 1;
     }
     .handle-right {
         position: relative;
-        height: 20px;
-        right: 5px;
+        height: 10px;
+        right: 2.5px;
         z-index: 1;
     }
     
@@ -43,7 +43,7 @@
     }
     
     .ourbox-image {
-        width: 210px;
+        width: 180px;
         height: auto;
         background-size: contain;
         margin: 8px;
@@ -114,7 +114,7 @@
         height: 16px;
     }
     .bride-image {
-        width: 240px;
+        width: 200px;
         height: auto;
         background-size: contain;
         margin-bottom: 0px;
@@ -168,7 +168,7 @@
         text-decoration: none;
     }
     .time {
-        font-size: 24px;
+        font-size: 1.6rem;
     }
     .icon {
         width: 16px;
@@ -180,7 +180,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: flex-start;
+        align-items: flex-start;;
         margin-top: 24px;
         margin-bottom: 24px;
         height: auto;
@@ -195,7 +195,12 @@
         width: 64px;
     }
     .time-section {
-        font-size: large;
+        
+        >h3 {
+            font-size: 1.1rem !important;
+        }
+
+        font-size: 1.2rem;
     }
     .countdown-outer-container {
         display: flex;
@@ -219,7 +224,7 @@
         padding-bottom: 32px;
     }
     .galery-image {
-        width: 200px;
+        width: 180px;
         height: auto;
         background-size: contain;
         margin: 12px;
@@ -247,7 +252,7 @@
         transform: rotate(0deg);
         width: 8em;
         margin-top: 10px;
-        margin-left: 73px;
+        margin-left: 63px;
         -webkit-filter: drop-shadow(0 1px 1px hsla(0,0%,0%,.3));
      }
     .tape:after,
@@ -359,24 +364,25 @@
         top: 0;
         left: 0;
         position: fixed;
-        // transform: translateX(-30px);
         width: auto;
         z-index: 100;
     }
     
     .music-trigger-inside {
-        cursor: pointer;
-        left: -27px !important;
+        // transform: translateX(-25px);
+        left: -30px !important;
         margin-top: 20px;
+        cursor: pointer;
         width: 50px;
         height: 50px;
         z-index: 101;
     }
     
     .music-trigger-inside-play {
-        cursor: pointer;
+        // transform: translateX(-25px);
+        left: -30px !important;
         margin-top: 20px;
-        left: -27px !important;
+        cursor: pointer;
         width: 50px;
         height: 50px;
         z-index: 101;
