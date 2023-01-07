@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.2242928a.css",
-    "main.js": "/static/js/main.8efbda24.js",
+    "main.css": "/static/css/main.23d6b662.css",
+    "main.js": "/static/js/main.f16094c7.js",
     "static/js/787.1c863b1e.chunk.js": "/static/js/787.1c863b1e.chunk.js",
-    "static/media/bride1.png": "/static/media/bride1.a2c1e34ec2736e0a2d81.png",
-    "static/media/bride2.png": "/static/media/bride2.e4c1afd6d812d750903a.png",
     "static/media/music.mp3": "/static/media/music.566e259bfa239d404676.mp3",
+    "static/media/bride-3.png": "/static/media/bride-3.e5c469d7e76620a3a52b.png",
+    "static/media/bride-4.png": "/static/media/bride-4.1fd6cff84868c5031908.png",
     "static/media/photo5.jpg": "/static/media/photo5.4022443d8b002c1067f3.jpg",
     "static/media/photo2.jpg": "/static/media/photo2.1eff7b4511abfa5e9ae3.jpg",
     "static/media/photo1.jpg": "/static/media/photo1.a371d2c41c4bb08a0af6.jpg",
@@ -26,12 +26,12 @@
     "static/media/cincin.png": "/static/media/cincin.a173d8af1a78cc65e87d.png",
     "static/media/amplop.png": "/static/media/amplop.3442de82b8bcb653772f.png",
     "index.html": "/index.html",
-    "main.2242928a.css.map": "/static/css/main.2242928a.css.map",
-    "main.8efbda24.js.map": "/static/js/main.8efbda24.js.map",
+    "main.23d6b662.css.map": "/static/css/main.23d6b662.css.map",
+    "main.f16094c7.js.map": "/static/js/main.f16094c7.js.map",
     "787.1c863b1e.chunk.js.map": "/static/js/787.1c863b1e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2242928a.css",
-    "static/js/main.8efbda24.js"
+    "static/css/main.23d6b662.css",
+    "static/js/main.f16094c7.js"
   ]
 }
