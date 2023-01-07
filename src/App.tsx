@@ -1,9 +1,10 @@
+/* eslint-disable no-restricted-globals */
 /* eslint-disable @typescript-eslint/no-use-before-define */
 import React, { useEffect, useRef, useState } from 'react';
 import logo from './logo.svg';
 import { animated, useSpring } from '@react-spring/web'
 import './App.scss';
-import OurBox, { DEFAULT_HEIGHT } from './Components/OurBox';
+import OurBox, { height as ourBoxHeight } from './Components/OurBox';
 import RollWood from './Components/RollWood';
 import ThePromises from './Components/ThePromises';
 import Invitation from './Components/Invitation';
@@ -30,14 +31,26 @@ const app = initializeApp(firebaseConfig);
 
 // Initialize Realtime Database and get a reference to the service
 const db = getDatabase(app);
+const { innerWidth } = window;
+const params = new Proxy(new URLSearchParams(window.location.search), {
+  get: (searchParams, p) => searchParams.get(p as any),
+});
 
 function App() {
   const appRef: any = useRef(null)
   const outerRef: any = useRef(null)
+  const ourBoxRef = useRef<any>(null)
   const paperContentRef: any = useRef(null)
   const [viewHeight, setViewHeight] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false)
   const [isShow, setShow] = useState(false)
+  const [DEFAULT_HEIGHT, SET_DEFAULT_HEIGHT] = useState<any>(380)
+  const [forName, setForName] = useState('');
+  // const dimensions = useWindowDimensions()
+  // console.log({dimensions})
+
+  // @ts-ignore
+
 
   const setDefaultHeight = () => {
     console.log({heightBasic: document.getElementsByClassName('paper-content')[0].clientHeight})
@@ -49,29 +62,53 @@ function App() {
 
   useEffect(() => {
     setDefaultHeight();
+    // @ts-ignore
+    const forName = params?.for || ''
+    if (forName !== '') {
+      setForName(forName)
+    }
+    // SET_DEFAULT_HEIGHT(ourBoxRef)
   }, [])
+
+  useEffect(() => {
+    if (innerWidth < 401) {
+      SET_DEFAULT_HEIGHT(445)
+    }
+
+    if (innerWidth >= 401 && innerWidth <= 800) {
+      SET_DEFAULT_HEIGHT(450)
+    }
+
+    if (innerWidth > 800) {
+      SET_DEFAULT_HEIGHT(390)
+    }
+  }, [])
+
 
   const [heightAnimation, api] = useSpring(() => ({
     from: {
-      height: DEFAULT_HEIGHT - 48 + "px", 
+      // height: DEFAULT_HEIGHT - 48 + "px", 
+      // height: ourBoxRef?.current?.clientHeight + 'px', 
     },
-  }), [])
+  }), [ourBoxRef])
 
   const [scaleAnimation, apiScale] = useSpring(() => ({
     from: {
       opacity: 1,
       display: "none",
-      padding: "48px", 
     },
   }), [])
 
   const handleShow = () => {
     const duration = 1000;
-    setShow(!isShow)
+    setShow(true)
     setIsPlaying(true)
     api.start({
       config: {
         duration,
+      },
+      from: {
+        height: DEFAULT_HEIGHT + 'px',
       },
       to: {
         height: `${viewHeight}px`,
@@ -106,7 +143,7 @@ function App() {
 
   const handleHide = () => {
     const duration = 1000;
-    setShow(!isShow)
+    setShow(false)
     setIsPlaying(false)
 
     apiScale.start({
@@ -145,20 +182,14 @@ function App() {
                 height: `${viewHeight}px`
               },
               to: {
-                height: DEFAULT_HEIGHT - 48 + "px", 
+                height: DEFAULT_HEIGHT + "px", 
               },
             })
           }
         })
       }
     })
-
-    // setTimeout(() => {
-    //   window.scrollTo({behavior: 'smooth', top: DEFAULT_HEIGHT})
-    // }, 100)
   }
-
-  console.log({outerRef})
 
   return (
     <>
@@ -176,7 +207,7 @@ function App() {
             style={viewHeight !== 0 ? {...heightAnimation} : {}}
             >
             <center>
-              <OurBox name='Syukron' onClickOpen={handleShow} />
+              <OurBox name={forName} onClickOpen={handleShow} />
               <animated.div style={viewHeight !== 0 ? {...scaleAnimation} : {}}>
                 <ThePromises />
                 <Invitation />

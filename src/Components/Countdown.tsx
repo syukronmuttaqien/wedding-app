@@ -54,9 +54,9 @@ const Countdown = () => {
         <div>
             <Fade direction='up'>
                  <div className='wrapper-title-container' >
-                    <h1 > ----------</h1>
+                    {/* <h1 > ----------</h1> */}
                     <h1 className='title-text title-container'>Countdown To Our Next Journey</h1>
-                    <h1 > ----------</h1>
+                    {/* <h1 > ----------</h1> */}
                 </div>
                 <br/>
                 <h3 className='fill-text'>
@@ -86,7 +86,7 @@ const Countdown = () => {
                             <h3 className="title-text">Seconds</h3>
                         </div>
                     </div>
-                    <a href={calendarSection1} style={{width:"48%"}} target="_blank" className="button-time fill-text" rel="noreferrer">
+                    <a href={calendarSection1} target="_blank" className="button-time fill-text width-flexible" rel="noreferrer">
                         <img className="icon" src = {kalender} />
                         Tambahkan Pengingat
                     </a>
@@ -101,7 +101,7 @@ const Countdown = () => {
     )
 
 }
-export default Countdown
+export default React.memo(Countdown)
 
 
   

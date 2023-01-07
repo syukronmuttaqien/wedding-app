@@ -14,13 +14,13 @@ const Galery = () => {
         <div>
             <Fade cascade direction='up'>
                 <div className='wrapper-title-container' >
-                    <h1 > ----------</h1>
+                    {/* <h1 > ----------</h1> */}
                     <h1 className='title-text title-container'>Our Memories</h1>
-                    <h1 > ----------</h1>
+                    {/* <h1 > ----------</h1> */}
                 </div>
                 <br />
-                <h3 className='fill-text quotes'>
-                    <Fade duration={75} cascade>&#8220; Berawal dari bercanda dan berakhir dengan rasa yang nyata &#8221;</Fade>
+                <h3 className='fill-text'>
+                    <Fade className='quotes' duration={75}>&#8220; Berawal dari bercanda dan berakhir dengan rasa yang nyata &#8221;</Fade>
                 </h3>
             </Fade>
             <div className='galery-container'>
@@ -56,4 +56,4 @@ const Galery = () => {
     )
 }
 
-export default Galery
+export default React.memo(Galery)

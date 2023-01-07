@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
+import useWindowDimensions from "../Hooks/useWindowDimensions";
 import amplop from '../images/amplop.png'
 import photobride from '../images/photo6.jpg'
 
@@ -7,40 +8,44 @@ import photobride from '../images/photo6.jpg'
 // import imageDummy from '../images/image-dummy.jpg'
 import "./styles.scss";
 
-export const DEFAULT_HEIGHT = 380;
-
 type OurBoxProps = {
   name: string;
   onClickOpen: () => void;
 };
 
+export let height = 0;
+
 const OurBox = (props: OurBoxProps) => {
   const { name, onClickOpen } = props;
+  height = document.getElementById('ourbox-id')?.clientHeight || 0
+    if (name === ''){
+      return null
+    }
 
-  return (
-    <><h1 className="bride-name mt-4">You Are Invited To Our Wedding</h1>
-  
-    <div className="ourbox-container">
-      <div>
-        <div className='tape'></div>
-        <div className="ourbox-image-frame">
-          <img className='ourbox-image' src={photobride} />
-          <p className="outbox-text-bottom bride-name">Fani & Syukron</p>
+    return (
+      <>
+        <h1 className="bride-name mt-4">You Are Invited To Our Wedding</h1>
+        <div id="ourbox-id" className="ourbox-container">
+          <div>
+            <div className='tape'></div>
+            <div className="ourbox-image-frame">
+              <img className='ourbox-image' src={photobride} />
+              <p className="outbox-text-bottom bride-name">Fani & Syukron</p>
+            </div>
+
+          </div>
+          <div className='ourbox-name-box mt-4'>
+            <span className="title-text f20">Kepada : 
+              <b className="fill-text f20"> {name}</b>
+            </span>
+            <button className="button-time mt-2" style={{width: 'auto'}} onClick={onClickOpen}>
+              <img className="icon" style={{width:20}} src={amplop} />Buka Undangan
+            </button>
+          </div>
+
         </div>
-
-      </div>
-      <div className='ourbox-name-box'>
-      <p style={{fontSize:20 }} className="title-text">Kepada : 
-          <b className="fill-text"> {name}</b>
-        </p>
-        <button className="button-time" style={{width: 'auto'}} onClick={onClickOpen}>
-          <img className="icon" style={{width:20}} src={amplop} />Buka Undangan
-        </button>
-    </div>
-
-    </div>
-    </>
-  );
+      </>
+    )
 };
 
-export default OurBox;
+export default React.memo(OurBox);

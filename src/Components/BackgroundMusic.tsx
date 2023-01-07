@@ -37,7 +37,7 @@ const BackgroundMusic = (props: BackgroundMusicProps) => {
     );
 }
 
-export const MusicTrigger = (props: MusicTriggerProps) => {
+const Trigger = (props: MusicTriggerProps) => {
     const {isPlaying, onChangeStatus} = props
 
     const status = isPlaying ? MusicStatus.STOPPED : MusicStatus.PLAYING
@@ -51,5 +51,7 @@ export const MusicTrigger = (props: MusicTriggerProps) => {
         </div>
     )
 }
+
+export const MusicTrigger = React.memo(Trigger)
 
 export default React.memo(BackgroundMusic)

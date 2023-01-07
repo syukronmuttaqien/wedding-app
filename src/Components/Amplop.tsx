@@ -18,10 +18,9 @@ const Amplop = (props:AmplopProps) => {
     
     return (
         <div>
-            <button className="button-time" style={{width: 'auto'}} onClick={handleShow}>Kado Pernikahan</button>
-            <button className="button-time" style={{width: 'auto'}} onClick={props.onClickClose}>Tutup Yah!</button>
+            <button className="button-time mt-4 width-flexible" onClick={handleShow}>Kado Pernikahan</button>
             <div>
-                <Modal show={show} onHide={handleClose} size="lg">
+                <Modal centered show={show} onHide={handleClose} size="lg">
                     <Modal.Header closeButton>
                         <Modal.Title>
                             Kado Pernikahan
@@ -48,8 +47,9 @@ const Amplop = (props:AmplopProps) => {
                     </Modal.Footer>
                 </Modal>
             </div>
+            <button className="button-time mt-4 mb-4 width-flexible" onClick={props.onClickClose}>Tutup Undangan</button>
         </div>
     )
 }
 
-export default Amplop
+export default React.memo(Amplop)

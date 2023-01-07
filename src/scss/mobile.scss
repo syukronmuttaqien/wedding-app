@@ -1,3 +1,60 @@
-@media (max-width: 320px) {
+@media (max-width: 400px) {
+    h1 {
+        font-size: 2.0rem;
+    }
     
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    h3 {
+        font-size: 1.6rem;
+    }
+    
+    h4 {
+        font-size: 1.4rem;
+    }
+    
+    h5 {
+        font-size: 1.2rem;
+    }
+    
+    h6 {
+        font-size: 1.0rem;
+    }
+
+    .paper-content {
+        flex: 1;
+        width: 100%;
+        background-size: contain;
+        background-image: url('../images/paper.png');
+        background-repeat: repeat-y;
+        margin: 0 8px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .all-container {
+        position: relative;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        height: auto;
+      }
+      
+      .container-center {
+        flex: 1;
+        /* background-repeat: repeat-x; */
+      }
+      .container-left {
+        position: relative;
+        flex: none;
+        width: 35px;
+      }
+      .container-right {
+        position: relative;
+        flex: none;
+        width: 35px;
+      }
 }
