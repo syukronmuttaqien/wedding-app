@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.bc091b1a.css",
-    "main.js": "/static/js/main.82c7a738.js",
+    "main.js": "/static/js/main.31926043.js",
     "static/js/787.1c863b1e.chunk.js": "/static/js/787.1c863b1e.chunk.js",
     "static/media/music.mp3": "/static/media/music.566e259bfa239d404676.mp3",
     "static/media/bride-3.png": "/static/media/bride-3.e5c469d7e76620a3a52b.png",
     "static/media/bride-4.png": "/static/media/bride-4.1fd6cff84868c5031908.png",
-    "static/media/photo5.jpg": "/static/media/photo5.4022443d8b002c1067f3.jpg",
-    "static/media/photo2.jpg": "/static/media/photo2.1eff7b4511abfa5e9ae3.jpg",
-    "static/media/photo1.jpg": "/static/media/photo1.a371d2c41c4bb08a0af6.jpg",
-    "static/media/photo4.jpg": "/static/media/photo4.592d7b639ce1c7c1d5cc.jpg",
-    "static/media/photo3.jpg": "/static/media/photo3.b706538d775788c9304a.jpg",
-    "static/media/photo6.jpeg": "/static/media/photo6.bf73f0b10afd7215eb6b.jpeg",
     "static/media/photo6.jpg": "/static/media/photo6.0a99cb851d2be7f7c789.jpg",
+    "static/media/photo4.jpg": "/static/media/photo4.321f8e872285b6a5586e.jpg",
+    "static/media/photo5.jpg": "/static/media/photo5.baf6de0f67d8cf8944ec.jpg",
+    "static/media/photo2.jpg": "/static/media/photo2.e654ed48a7b13dcf751d.jpg",
+    "static/media/photo3.jpg": "/static/media/photo3.a0a9c7775b5915ab1f1d.jpg",
+    "static/media/photo6.jpeg": "/static/media/photo6.e7ace0ce35988c996945.jpeg",
     "static/media/gate.png": "/static/media/gate.d0c1faebaf683d2263bd.png",
     "static/media/danafani.png": "/static/media/danafani.4282508fc3bf9c751bb5.png",
+    "static/media/photo1.jpg": "/static/media/photo1.6804e16c99bc4ff6cac0.jpg",
     "static/media/paper.png": "/static/media/paper.a0f46e6326d702812208.png",
     "static/media/DancingScript-Bold.ttf": "/static/media/DancingScript-Bold.72fc35f38c2864ca2cd5.ttf",
     "static/media/DancingScript-Regular.ttf": "/static/media/DancingScript-Regular.5bfc0dcc0c0ff5a2832e.ttf",
@@ -27,11 +27,11 @@
     "static/media/amplop.png": "/static/media/amplop.3442de82b8bcb653772f.png",
     "index.html": "/index.html",
     "main.bc091b1a.css.map": "/static/css/main.bc091b1a.css.map",
-    "main.82c7a738.js.map": "/static/js/main.82c7a738.js.map",
+    "main.31926043.js.map": "/static/js/main.31926043.js.map",
     "787.1c863b1e.chunk.js.map": "/static/js/787.1c863b1e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bc091b1a.css",
-    "static/js/main.82c7a738.js"
+    "static/js/main.31926043.js"
   ]
 }
