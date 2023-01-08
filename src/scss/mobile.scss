@@ -25,7 +25,7 @@
 
     .paper-content {
         flex: 1;
-        width: 100%;
+        width: 100% max-content;
         background-size: contain;
         background-image: url('../images/paper.png');
         background-repeat: repeat-y;
@@ -44,7 +44,7 @@
       }
       
       .container-center {
-        flex: 1;
+        flex: 1 !important;
         /* background-repeat: repeat-x; */
       }
       .container-left {

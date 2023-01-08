@@ -14,7 +14,7 @@ const Time = () => {
             <Fade direction="up">
                 <div className='wrapper-title-container' >
                     {/* <h1 > ----------</h1> */}
-                    <h1 className='title-text title-container'>Our Event Will Be Held At :</h1>
+                    <h1 className='title-text title-container'>Events</h1>
                     {/* <h1 > ----------</h1> */}
                 </div>
             </Fade>

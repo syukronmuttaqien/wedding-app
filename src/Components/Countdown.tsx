@@ -41,9 +41,11 @@ const Countdown = () => {
         days = `${days}`;
         if (numbersToAddZeroTo.includes(hours)) {
             hours = `0${hours}`;
-        } else if (numbersToAddZeroTo.includes(minutes)) {
+        } 
+        if (numbersToAddZeroTo.includes(minutes)) {
             minutes = `0${minutes}`;
-        } else if (numbersToAddZeroTo.includes(seconds)) {
+        } 
+        if (seconds < 10) {
             seconds = `0${seconds}`;
         }
 
@@ -70,17 +72,17 @@ const Countdown = () => {
                             <h1 className='time'>{state.days || '0'}</h1>
                             <h3 className="title-text">Days</h3>
                         </div>
-                        <div className='countdown-divider' />
+                        <div className='countdown-divider'><h3> : </h3></div>
                         <div className='time-section'>
                             <h1 className='time'>{state.hours || '00'}</h1>
                             <h3 className="title-text">Hours</h3>
                         </div>
-                        <div className='countdown-divider' />
+                        <div className='countdown-divider'><h3> : </h3></div>
                         <div className='time-section'>
                             <h1 className='time'>{state.minutes || '00'}</h1>
                             <h3 className="title-text">Minutes</h3>
                         </div>
-                        <div className='countdown-divider' />
+                        <div className='countdown-divider'><h3> : </h3></div>
                         <div className='time-section'>
                             <h1 className='time'>{state.seconds || '00'}</h1>
                             <h3 className="title-text">Seconds</h3>
