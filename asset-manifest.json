@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.76ac8a84.css",
-    "main.js": "/static/js/main.cd2d56ea.js",
+    "main.css": "/static/css/main.f37c47ec.css",
+    "main.js": "/static/js/main.97dd3eb3.js",
     "static/js/787.1c863b1e.chunk.js": "/static/js/787.1c863b1e.chunk.js",
     "static/media/music.mp3": "/static/media/music.566e259bfa239d404676.mp3",
     "static/media/bride-3.png": "/static/media/bride-3.e5c469d7e76620a3a52b.png",
     "static/media/bride-4.png": "/static/media/bride-4.1fd6cff84868c5031908.png",
     "static/media/photo6.jpg": "/static/media/photo6.0a99cb851d2be7f7c789.jpg",
     "static/media/photo4.jpg": "/static/media/photo4.321f8e872285b6a5586e.jpg",
+    "static/media/vinylblack.png": "/static/media/vinylblack.fec3f1561cd586beec4a.png",
     "static/media/photo5.jpg": "/static/media/photo5.baf6de0f67d8cf8944ec.jpg",
     "static/media/photo2.jpg": "/static/media/photo2.e654ed48a7b13dcf751d.jpg",
     "static/media/photo3.jpg": "/static/media/photo3.a0a9c7775b5915ab1f1d.jpg",
@@ -22,16 +23,15 @@
     "static/media/Typewriter-dry.otf": "/static/media/Typewriter-dry.4b3d15e775230210c4e3.otf",
     "static/media/Lancelot-Regular.ttf": "/static/media/Lancelot-Regular.0aaf8fe595238c141da7.ttf",
     "static/media/danas.png": "/static/media/danas.c58c557f7fef2eaab9ff.png",
-    "static/media/vinylblack.png": "/static/media/vinylblack.53216f05fa8a54fe6c11.png",
     "static/media/cincin.png": "/static/media/cincin.a173d8af1a78cc65e87d.png",
     "static/media/amplop.png": "/static/media/amplop.3442de82b8bcb653772f.png",
     "index.html": "/index.html",
-    "main.76ac8a84.css.map": "/static/css/main.76ac8a84.css.map",
-    "main.cd2d56ea.js.map": "/static/js/main.cd2d56ea.js.map",
+    "main.f37c47ec.css.map": "/static/css/main.f37c47ec.css.map",
+    "main.97dd3eb3.js.map": "/static/js/main.97dd3eb3.js.map",
     "787.1c863b1e.chunk.js.map": "/static/js/787.1c863b1e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76ac8a84.css",
-    "static/js/main.cd2d56ea.js"
+    "static/css/main.f37c47ec.css",
+    "static/js/main.97dd3eb3.js"
   ]
 }
