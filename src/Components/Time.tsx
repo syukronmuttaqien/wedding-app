@@ -26,7 +26,7 @@ const Time = () => {
                                 <h2 className="title-text">Akad Nikah</h2>
                                 <img className="time-border-image" src= {border} alt="time-left-pic"/>
                                 <h2 className="fill-text">Sabtu, 21 Januari 2023</h2>
-                                <h2 className="fill-text">09.00 Wib - 11.00 Wib</h2>
+                                <h2 className="fill-text">09.00 WIB - 11.00 WIB</h2>
                             </Fade>
                         </div> 
                         {/* <div className="time-divider"></div> */}
@@ -36,8 +36,8 @@ const Time = () => {
                                 <h2 className="title-text">Resepsi</h2>
                                 <img className="time-border-image" src= {border} alt="time-right-pic" />
                                 <h2 className="fill-text">Sabtu, 21 Januari 2023</h2>
-                                <h2 className="fill-text">Sesi 1 : 12.00 Wib - 15.00 Wib
-                                <br /> Sesi 2 : 15.00 Wib - 17.00 Wib
+                                <h2 className="fill-text">Sesi 1 : 12.00 WIB - 15.00 WIB
+                                <br /> Sesi 2 : 15.00 WIB - 17.00 WIB
                                 </h2>
                             </Fade>
                         </div> 

@@ -1,6 +1,6 @@
 import React from 'react'
-import fani from '../images/bride-3.png'
-import syukron from '../images/bride-4.png'
+import fani from '../images/bride1.png'
+import syukron from '../images/bride2.png'
 
 // @ts-ignore
 import {Fade} from 'react-awesome-reveal'

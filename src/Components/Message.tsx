@@ -55,16 +55,6 @@ const Message = (props: MessageProps) => {
                         Kirim ucapan dan do'a terbaik untuk kami
                     </h3>
                 </div>
-                <div className='mt-4'>
-                    <div className='mt-4 message-list-container'>
-                        {messages?.map((r: any, index: number) => (
-                            <div key={index.toString()} className='message-item-list'>
-                                <span className='item-name'>{r.name}</span>
-                                <span className='item-message'>{r.message}</span>
-                            </div>
-                        ))}
-                    </div>
-                </div>
                 <Form className="message-container">
                     <Form.Group>
                         <h3 className='title-text'>Your Name</h3>
@@ -77,6 +67,17 @@ const Message = (props: MessageProps) => {
                     </Form.Group>
                 </Form>
                 <button disabled={nama.trim() === '' || message.trim() === ''} onClick={sendMessage} className='button-time width-flexible'>Send</button>
+                <div className='mt-4'>
+                    <div className='mt-4 message-list-container'>
+                        {messages?.map((r: any, index: number) => (
+                            <div key={index.toString()} className='message-item-list'>
+                                <span className='item-name'>{r.name}</span>
+                                <span className='item-message'>{r.message}</span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                
             </Fade>
         </>
     )

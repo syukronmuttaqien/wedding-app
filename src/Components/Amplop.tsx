@@ -18,7 +18,10 @@ const Amplop = (props:AmplopProps) => {
     
     return (
         <div>
-            <button className="button-time mt-4 mb-4 width-flexible" onClick={handleShow}>Kado Pernikahan</button>
+            <BorderLine />
+            
+            <h1 className='title-text mt-4'>We expect you to come to our wedding, Thank You!</h1>
+            <button className="button-time mt-4 mb-4" style={{width:"auto"}} onClick={handleShow}>Kado Pernikahan</button>
             <div>
                 <Modal centered show={show} onHide={handleClose} size="lg">
                     <Modal.Header closeButton>
@@ -27,7 +30,7 @@ const Amplop = (props:AmplopProps) => {
                         </Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        Doa restu anda merupakan karunia yang sangat berarti bagi kami, Jika memberi 
+                        Doa restu anda merupakan karunia yang sangat berarti bagi kami. Jika memberi 
                         adalah ungkapan tanda selamat, anda dapat memberi kado ke alamat : <b>Kp. Curug deng-deng No 12 RT 003 RW 004 Kec. Caringin Kab Bogor</b> atau secara online pada :
                         <div className='modal-content-container'>
                             <div className='modal-content'>
@@ -47,8 +50,7 @@ const Amplop = (props:AmplopProps) => {
                     </Modal.Footer>
                 </Modal>
             </div>
-            <h1 className='title-text mt-4'>We expect you to come to our wedding, Thank You!</h1>
-            <button className="button-time mt-4 mb-4 width-flexible" onClick={props.onClickClose}>Tutup Undangan</button>
+            <button className="button-time mt-4 mb-4" style={{width: 'auto'}}  onClick={props.onClickClose}>Tutup Undangan</button>
         </div>
     )
 }
