@@ -120,6 +120,18 @@
     background-size: contain;
     margin-bottom: 24px;
 }
+
+@media (min-width: 800px) and (max-width: 1130px    ) {
+    .bride-image-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 64px;
+        margin-bottom: 24px;
+    }
+}
+
 .bride-name {
     font-family: "DancingScriptBold" !important;
 }
@@ -395,4 +407,10 @@
         -webkit-transform: rotate(360deg); 
         transform:rotate(360deg); 
     } 
+}
+
+.icon32 {
+    width: 16px;
+    height: 16px;
+    background-size: contain;
 }

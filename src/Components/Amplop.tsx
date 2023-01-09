@@ -4,6 +4,7 @@ import Modal from 'react-bootstrap/Modal';
 import { Container, Table } from 'react-bootstrap';
 import dana1 from '../images/danafani.png'
 import dana2 from '../images/danas.png'
+import gift from '../images/gift.png'
 
 
 
@@ -21,7 +22,6 @@ const Amplop = (props:AmplopProps) => {
             <BorderLine />
             
             <h1 className='title-text mt-4'>We expect you to come to our wedding, Thank You!</h1>
-            <button className="button-time mt-4 mb-4" style={{width:"auto"}} onClick={handleShow}>Kado Pernikahan</button>
             <div>
                 <Modal centered show={show} onHide={handleClose} size="lg">
                     <Modal.Header closeButton>
@@ -50,7 +50,13 @@ const Amplop = (props:AmplopProps) => {
                     </Modal.Footer>
                 </Modal>
             </div>
-            <button className="button-time mt-4 mb-4" style={{width: 'auto'}}  onClick={props.onClickClose}>Tutup Undangan</button>
+            <div className='row justify-content-center'>
+                <button className="button-time mt-4 mb-4" style={{width:"auto"}} onClick={handleShow}>
+                    <img className='icon32' src={gift} />
+                </button>
+                <div style={{width:8}}/>
+                <button className="button-time mt-4 mb-4" style={{width: 'auto'}}  onClick={props.onClickClose}>Tutup Undangan</button>
+            </div>
         </div>
     )
 }
