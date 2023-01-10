@@ -44,10 +44,10 @@ const Time = () => {
                     </div>
                     <Fade cascade direction="up">
                         <h2 className="fill-text">Villa Park Glenn
-                            <br /> 7RV2+G74, Wr. Menteng, Kec. Cijeruk, Kabupaten Bogor, Jawa Barat 16740
+                            <br /> Jl. Cijeruk-Caringin Wr. Menteng, Kec. Cijeruk, Kabupaten Bogor, Jawa Barat 16740
                         </h2>
                         <br /> 
-                        <a href="https://goo.gl/maps/PQFANFkvMMmT3CKS9"  target="_blank" className="button-time fill-text" rel="noreferrer">
+                        <a href="https://goo.gl/maps/PQFANFkvMMmT3CKS9"  target="_blank" className="button-time" rel="noreferrer">
                             <img className="icon" src = {location} alt="location-icon" />
                             Lihat Lokasi
                         </a>  

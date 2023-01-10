@@ -88,7 +88,7 @@ const Countdown = () => {
                             <h3 className="title-text">Seconds</h3>
                         </div>
                     </div>
-                    <a href={calendarSection1} target="_blank" className="button-time fill-text width-flexible" rel="noreferrer">
+                    <a href={calendarSection1} target="_blank" className="button-time width-flexible" rel="noreferrer">
                         <img className="icon" src = {kalender} />
                         Tambahkan Pengingat
                     </a>
