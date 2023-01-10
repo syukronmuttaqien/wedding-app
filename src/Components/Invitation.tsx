@@ -7,7 +7,7 @@ import {Fade} from 'react-awesome-reveal'
 
 const Invitation = () => {
     return (
-        <div>
+        <section>
             <Fade triggerOnce cascade delay={2000} direction='up'>
                 <h1 className='title-text'>We Are Getting Married</h1>
                 <h6 className='fill-text'>
@@ -33,7 +33,7 @@ const Invitation = () => {
                     </div>
                 </Fade>
             </div>
-        </div>
+        </section>
     )
 }
 

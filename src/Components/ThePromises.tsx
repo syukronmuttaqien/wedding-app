@@ -5,7 +5,7 @@ import {Fade} from 'react-awesome-reveal';
 
 const ThePromises = () => {
     return (
-        <div>
+        <section>
             <Fade triggerOnce cascade direction='up'>
                  <div className='wrapper-title-container' >
                     {/* <h1 > -----</h1> */}
@@ -21,7 +21,7 @@ const ThePromises = () => {
                 <h5 className='fill-text mt-4'> (QS Ar-Rum : 21) </h5>
                 <BorderLine />
             </Fade>
-        </div>
+        </section>
     )
 }
 

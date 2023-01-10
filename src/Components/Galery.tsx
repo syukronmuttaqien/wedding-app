@@ -11,7 +11,7 @@ import BorderLine from './BorderLine';
 
 const Galery = () => {
     return (
-        <div>
+        <section>
             <Fade cascade direction='up'>
                 <div className='wrapper-title-container' >
                     {/* <h1 > ----------</h1> */}
@@ -52,7 +52,7 @@ const Galery = () => {
                 </div>
                 </Fade>
             </div>   
-        </div>
+        </section>
     )
 }
 

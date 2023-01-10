@@ -10,7 +10,7 @@ import {Fade} from 'react-awesome-reveal'
 
 const Time = () => {
     return(
-        <div>
+        <section>
             <Fade direction="up">
                 <div className='wrapper-title-container' >
                     {/* <h1 > ----------</h1> */}
@@ -54,7 +54,7 @@ const Time = () => {
                     </Fade>
                     <br /><br />   <br /><br />  
             </div>
-        </div>
+        </section>
         
         
     )

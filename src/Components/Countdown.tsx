@@ -53,7 +53,7 @@ const Countdown = () => {
         }
     };
     return (
-        <div>
+        <section>
             <Fade direction='up'>
                  <div className='wrapper-title-container' >
                     {/* <h1 > ----------</h1> */}
@@ -98,7 +98,7 @@ const Countdown = () => {
 
                 </div>
             </Fade>
-        </div>
+        </section>
            
     )
 

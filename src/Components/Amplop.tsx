@@ -18,7 +18,7 @@ const Amplop = (props:AmplopProps) => {
     const handleShow = () => setShow(true);
     
     return (
-        <div>
+        <section>
             <BorderLine />
             
             <h1 className='title-text mt-4'>We expect you to come to our wedding, Thank You!</h1>
@@ -57,7 +57,7 @@ const Amplop = (props:AmplopProps) => {
                 <div style={{width:8}}/>
                 <button className="button-time mt-4 mb-4" style={{width: 'auto'}}  onClick={props.onClickClose}>Tutup Undangan</button>
             </div>
-        </div>
+        </section>
     )
 }
 

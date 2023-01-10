@@ -59,6 +59,7 @@
     padding-bottom: 24px;
     border-radius: 5px;
     position: relative;
+    box-shadow: 1px 11px 20px -5px hsl(0deg 0% 0% / 24%)
 }
 .outbox-text-bottom {
     position :relative;
@@ -97,6 +98,9 @@
 .invitation-text {
     font-family: "Typewriter" !important;
     font-weight: normal;
+}
+.script-text {
+    font-family: "DancingScript" !important;
 }
 .title-text {
     font-family: "Windsor" !important;
@@ -250,6 +254,7 @@
     padding-right: 10px;
     padding-bottom: 50px;
     border-radius: 5px;
+    box-shadow: 1px 11px 20px -5px hsl(0deg 0% 0% / 24%)
 }
 
 .width-flexible {
@@ -267,6 +272,43 @@
     margin-left: 75px;
     -webkit-filter: drop-shadow(0 1px 1px hsla(0,0%,0%,.3));
  }
+
+ .tape-fix {
+    background-color: rgba(255,255,235,.6);
+    box-shadow: inset 0 0 1em .5em rgba(255, 255, 255, 0.1);
+    height: 3em;
+    position: relative;
+    margin-top: -28px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(0deg);
+    width: 8em;
+    left: 0;
+    -webkit-filter: drop-shadow(0 1px 1px hsla(0,0%,0%,.3));
+ }
+
+ .tape-fix:after,
+.tape-fix:before {
+    background-size: .4em .4em;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    width: .2em;
+ }
+.tape-fix:after {
+    background-image: linear-gradient(45deg, transparent 50%, hsla(0,0%,100%,.3) 50%),
+                      linear-gradient(-45deg, transparent 50%, hsla(0,0%,100%,.3) 50%);
+    background-position: 0 100%;
+    left: -.2em;
+}
+.tape-fix:before {
+    background-image: linear-gradient(135deg, transparent 50%, hsla(0,0%,100%,.3) 50%),
+                      linear-gradient(-135deg, transparent 50%, hsla(0,0%,100%,.3) 50%);
+    background-position: 100% 100%;
+    right: -.2em;
+}
+
 .tape:after,
 .tape:before {
     background-size: .4em .4em;
@@ -307,32 +349,56 @@
 .message-list-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    height: 320px;
-    border-radius: 10px;
-    background-color: #B8733340;
+    height: 450px;
+    border-radius: 8px;
+    padding: 24px;
+    // background-color: #b87333c7;
     overflow-y: scroll;
-    padding: 4px;
-    width: 50%;
+    width: 100%;
     margin-bottom: 24px;
 }
 
 .message-item-list {
     display: flex;
     flex-direction: column;
-    // background-color: red;
-    padding: 8px;
+    padding: 16px;
+    flex: 1;
+    height: 100%;
+    padding-bottom: 8px;
+    border-width: 1px;
+    background-image: url(../../images/paper.webp);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-color: lightyellow;
     margin-bottom: 2px;
+    border-radius: 16px;
+    // min-height: 180px;
+    box-shadow: 1px 11px 20px -5px hsl(0deg 0% 0% / 24%);
+    margin-bottom: 16px;
 
     >.item-name {
-        font-size: 13px;
+        flex: none;
+        font-size: 1.3rem;
         text-align: start;
         font-weight: 600;
     }
 
     >.item-message {
+        flex: 1;
+        width: 100%;
         text-align: start;
-        font-size: 12px;
+        word-break: break-all;
+        font-size: 1.2rem;
+    }
+
+    >.item-date {
+        width: 100%;
+        font-size: 1.1rem;
+        text-align: end;
+        margin-top: 10px;
+        flex: none;
     }
 }
 .title-container {
