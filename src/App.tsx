@@ -44,6 +44,7 @@ function App() {
   const [viewHeight, setViewHeight] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false)
   const [isShow, setShow] = useState(false)
+  const [showModal, setShowModal] = useState(false)
   const [DEFAULT_HEIGHT, SET_DEFAULT_HEIGHT] = useState<any>(380)
   const [forName, setForName] = useState('');
   // const dimensions = useWindowDimensions()
@@ -81,7 +82,7 @@ function App() {
     }
     
     if (innerWidth > 320 && innerWidth < 401) {
-      SET_DEFAULT_HEIGHT(445)
+      SET_DEFAULT_HEIGHT(455)
     }
 
     if (innerWidth >= 401 && innerWidth <= 800) {
@@ -89,7 +90,7 @@ function App() {
     }
 
     if (innerWidth > 800) {
-      SET_DEFAULT_HEIGHT(390)
+      SET_DEFAULT_HEIGHT(500)
     }
   }, [])
 
@@ -201,7 +202,6 @@ function App() {
   }
 
   return (
-    <>
     <div ref={outerRef} className='outer'>
       {isShow && (
         <MusicTrigger isPlaying={isPlaying} onChangeStatus={() => setIsPlaying(!isPlaying)} />
@@ -232,7 +232,6 @@ function App() {
         </animated.div>
       <RollWood />
     </div>
-    </>
   );
 }
 

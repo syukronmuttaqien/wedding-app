@@ -55,7 +55,7 @@ const Message = (props: MessageProps) => {
             <Fade cascade>
                 <div className='wrapper-title-container' >
                     {/* <h1 > ----------</h1> */}
-                    <h1 className='title-text title-container'>Message For Us</h1>
+                    <h1 className='title-text title-container'>Wish For Us</h1>
                     {/* <h1 > ----------</h1> */}
                 </div>
                 <div className='mt-4'>
@@ -70,7 +70,7 @@ const Message = (props: MessageProps) => {
                     </Form.Group>
 
                     <Form.Group className='mt-4'>
-                        <h3 className='title-text'>Your Message</h3>
+                        <h3 className='title-text'>Your Wish</h3>
                         <Form.Control className='f16' value={message} onChange={(event) => setMessage(event.target.value)} as="textarea" rows={3} placeholder="Your message here..." />
                     </Form.Group>
                 </Form>
@@ -84,9 +84,10 @@ const Message = (props: MessageProps) => {
             <div className='mt-4'>
                 <div id='message-list-container' className='mt-4 message-list-container'>
                     <Row>
-                        {messages?.map((r: any, index: number) => (
+                        {messages.length < 1 && <h6>No Recent Wishes.</h6>}
+                        {messages.map((r: any, index: number) => (
                             <Col xs={12} sm={6} md={6} lg={4} xl={3} key={index.toString()}>
-                                <Fade direction='up' cascade>
+                                <Fade className='full-height' direction='up' cascade>
                                     <div className='message-item-list mt-3'>
                                         <div className='tape-fix'></div>
                                         <span className='item-name script-text fs-3 fw-bold'>{r.name}</span>

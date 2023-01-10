@@ -24,6 +24,9 @@ const OurBox = (props: OurBoxProps) => {
 
     return (
       <>
+        <h1 className="script-text mt-4">Dear,
+          <b className="script-text"> {name}</b>
+        </h1>
         <h1 className="bride-name mt-4">You Are Invited To Our Wedding</h1>
         <div id="ourbox-id" className="ourbox-container">
           <div>
@@ -33,16 +36,18 @@ const OurBox = (props: OurBoxProps) => {
               <p className="outbox-text-bottom bride-name">Fani & Syukron</p>
             </div>
           </div>
-          <div className='ourbox-name-box mt-4'>
-            <span className="title-text f16">Kepada : 
-              <b className="fill-text f16"> {name}</b>
+          {/* <div className='ourbox-name-box mt-4'>
+            <span className="script-text fs-2">Kepada : 
+              <b className="script-text fs-2"> {name}</b>
             </span>
             <button className="button-time mt-3" style={{width: 'auto'}} onClick={onClickOpen}>
               <img className="icon" style={{width:20}} src={amplop} />Buka Undangan
             </button>
-          </div>
-
+          </div> */}
         </div>
+        <button className="button-time mt-4 mb-4" style={{width: 'auto'}} onClick={onClickOpen}>
+          <img className="icon" style={{width:20}} src={amplop} />Buka Undangan
+        </button>
       </>
     )
 };

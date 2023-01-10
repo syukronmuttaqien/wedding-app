@@ -38,7 +38,13 @@ body {
   background-image: url('../images/starlight.jpg');
   background-size: contain;
   background-repeat: repeat-y repeat-x;
+  scrollbar-width: 0;
     // background-color: black !important;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+  scrollbar-width: 0;
 }
 
 section {
