@@ -9,6 +9,8 @@
     flex: 1;
     /* background-repeat: repeat-x; */
     height: 60px;
+    margin-left: -17.5px;
+    margin-right: -17.5px;
     background-size: contain;
     z-index: 10;
 }
@@ -16,14 +18,14 @@
     position: relative;
     background-size: contain;
     height: 60px;
-    left: 20px;
+    left: 0px;
     z-index: 1;
 }
 .handle-right {
     position: relative;
     background-size: contain;
     height: 60px;
-    right: 20px;
+    right: 0px;
     z-index: 1;
 }
 
@@ -235,7 +237,7 @@
     padding-bottom: 32px;
 }
 .galery-image {
-    width: 200px;
+    width: 240px;
     height: auto;
     background-size: contain;
     margin: 12px;

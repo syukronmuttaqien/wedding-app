@@ -35,7 +35,10 @@ $width-tablet-max: 640px;
 }
 
 body {
-    background-color: black !important;
+  background-image: url('../images/starlight.jpg');
+  background-size: contain;
+  background-repeat: repeat-y repeat-x;
+    // background-color: black !important;
 }
 
 h1 {
@@ -90,12 +93,12 @@ h6 {
 .container-left {
   position: relative;
   flex: none;
-  width: 120px !important;
+  width: 100px !important;
 }
 .container-right {
   position: relative;
   flex: none;
-  width: 120px !important;
+  width: 100px !important;
 }
 
 .outer {

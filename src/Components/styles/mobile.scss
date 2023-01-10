@@ -8,6 +8,8 @@
     }
     .rollbar {
         flex: 1;
+        margin-left: -25px;
+        margin-right: -25px;
         /* background-repeat: repeat-x; */
         height: 20px;
         z-index: 10;
@@ -15,13 +17,13 @@
     .handle-left {
         position: relative;
         height: 20px;
-        left: 5px;
+        left: -15px;
         z-index: 1;
     }
     .handle-right {
         position: relative;
         height: 20px;
-        right: 5px;
+        right: -15px;
         z-index: 1;
     }
     
